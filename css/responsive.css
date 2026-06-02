@@ -6965,3 +6965,767 @@ object {
     border: 1px solid #ddd;
   }
 }
+
+/* ============================================
+   RESPONSIVE.CSS — GALLERY.HTML MAIN CONTENT
+   ============================================ */
+
+/* ============================================
+   1. LARGE TABLETS & SMALL LAPTOPS (≤1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+  .gallery-hero {
+    min-height: 50vh;
+    padding: calc(var(--header-height) + var(--space-2xl)) var(--space-lg)
+      var(--space-2xl);
+  }
+
+  .gallery-hero-container {
+    padding: 0 var(--space-lg);
+  }
+
+  .gallery-hero-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  .gallery-hero-stats {
+    padding: var(--space-md) var(--space-xl);
+    gap: var(--space-lg);
+  }
+
+  .gallery-filter-container {
+    padding: 0 var(--space-lg);
+  }
+
+  .gallery-grid-container {
+    padding: 0 var(--space-lg);
+  }
+
+  /* Masonry: 2 columns */
+  .gallery-grid {
+    column-count: 2;
+    column-gap: var(--space-md);
+  }
+
+  .gallery-item {
+    margin-bottom: var(--space-md);
+  }
+
+  .gallery-featured-container,
+  .gallery-behind-container,
+  .gallery-cta-container {
+    padding: 0 var(--space-lg);
+  }
+
+  .featured-transformation-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featured-comparison {
+    min-height: 420px;
+  }
+
+  .featured-details {
+    padding: var(--space-2xl);
+  }
+
+  .behind-grid {
+    grid-auto-rows: 240px;
+    gap: var(--space-md);
+  }
+
+  /* Lightbox */
+  .lightbox-image-wrapper {
+    max-width: 88vw;
+  }
+
+  .lightbox-prev {
+    left: var(--space-lg);
+  }
+
+  .lightbox-next {
+    right: var(--space-lg);
+  }
+}
+
+/* ============================================
+   2. TABLETS (≤900px)
+   ============================================ */
+@media (max-width: 900px) {
+  .featured-transformation-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-comparison {
+    min-height: 350px;
+  }
+
+  .featured-details {
+    padding: var(--space-xl);
+  }
+
+  .lightbox-top-bar {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .lightbox-nav {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* ============================================
+   3. MOBILE LANDSCAPE & LARGE PHONES (≤768px)
+   ============================================ */
+@media (max-width: 768px) {
+  /* --- Gallery Hero --- */
+  .gallery-hero {
+    min-height: auto;
+    padding: calc(64px + var(--space-xl)) var(--space-md) var(--space-xl);
+  }
+
+  .gallery-hero-container {
+    padding: 0 var(--space-md);
+  }
+
+  .gallery-hero-title {
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+  }
+
+  .gallery-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .gallery-hero-stats {
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding: var(--space-xl);
+    max-width: 280px;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+
+  .gallery-stat-divider {
+    width: 60px;
+    height: 1px;
+  }
+
+  /* --- Filter --- */
+  .gallery-filter {
+    position: relative;
+    top: auto;
+  }
+
+  .gallery-filter-container {
+    padding: 0 var(--space-md);
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-md);
+  }
+
+  .filter-group {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .filter-label {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: var(--space-xs);
+  }
+
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .filter-sort {
+    justify-content: center;
+    display: flex;
+  }
+
+  /* --- Gallery Grid — Masonry 2 columns --- */
+  .gallery-grid-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .gallery-grid-container {
+    padding: 0 var(--space-md);
+  }
+
+  .gallery-grid {
+    column-count: 2;
+    column-gap: var(--space-sm);
+  }
+
+  .gallery-item {
+    margin-bottom: var(--space-sm);
+    border-radius: 12px;
+  }
+
+  .gallery-item-overlay {
+    padding: var(--space-md);
+  }
+
+  .gallery-item-overlay-title {
+    font-size: 1rem;
+  }
+
+  .gallery-item-zoom {
+    width: 38px;
+    height: 38px;
+  }
+
+  .gallery-item-info {
+    padding: var(--space-sm) var(--space-md) var(--space-md);
+  }
+
+  .gallery-item-title {
+    font-size: 0.95rem;
+  }
+
+  .gallery-load-more {
+    margin-top: var(--space-2xl);
+  }
+
+  /* --- Featured --- */
+  .gallery-featured {
+    padding: var(--space-2xl) 0;
+  }
+
+  .gallery-featured-container {
+    padding: 0 var(--space-md);
+  }
+
+  .featured-transformation-card {
+    border-radius: 16px;
+  }
+
+  .featured-comparison {
+    min-height: 300px;
+  }
+
+  .featured-details {
+    padding: var(--space-xl) var(--space-lg);
+    gap: var(--space-lg);
+  }
+
+  .featured-quote {
+    font-size: 0.95rem;
+  }
+
+  /* --- Behind the Chair --- */
+  .gallery-behind {
+    padding: var(--space-2xl) 0;
+  }
+
+  .gallery-behind-container {
+    padding: 0 var(--space-md);
+  }
+
+  .behind-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: var(--space-md);
+    margin-top: var(--space-2xl);
+  }
+
+  .behind-item--large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  /* --- CTA --- */
+  .gallery-cta {
+    padding: var(--space-2xl) 0;
+  }
+
+  .gallery-cta-container {
+    padding: 0 var(--space-md);
+  }
+
+  .gallery-cta-title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  .gallery-cta-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .gallery-cta-actions {
+    flex-direction: column;
+    gap: var(--space-sm);
+    align-items: center;
+  }
+
+  .gallery-cta-actions .btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  /* --- Lightbox --- */
+  .lightbox-top-bar {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .lightbox-image-wrapper {
+    max-width: 92vw;
+    max-height: 65vh;
+    margin-top: var(--space-lg);
+  }
+
+  .lightbox-image {
+    max-height: 65vh;
+  }
+
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+    top: auto;
+    bottom: var(--space-xl);
+    transform: none;
+  }
+
+  .lightbox-prev {
+    left: var(--space-lg);
+  }
+
+  .lightbox-next {
+    right: var(--space-lg);
+  }
+
+  .lightbox-caption-bar {
+    padding: var(--space-md) var(--space-lg) var(--space-xl);
+  }
+
+  .lightbox-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* ============================================
+   4. SMALL PHONES (≤480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .gallery-hero {
+    padding-top: calc(var(--header-height) + var(--space-2xl));
+  }
+
+  .gallery-hero-title {
+    font-size: clamp(1.6rem, 6vw, 2rem);
+  }
+
+  .gallery-hero-stats {
+    padding: var(--space-lg);
+    gap: var(--space-md);
+  }
+
+  .gallery-stat-number {
+    font-size: clamp(1.3rem, 4vw, 1.6rem);
+  }
+
+  .filter-group {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.75rem;
+    border-radius: 8px;
+  }
+
+  .sort-select {
+    padding: 0.5rem 2rem 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  /* Masonry: single column on small phones */
+  .gallery-grid {
+    column-count: 1;
+    column-gap: var(--space-md);
+  }
+
+  .gallery-item {
+    margin-bottom: var(--space-md);
+  }
+
+  .gallery-item-image {
+    /* Taller aspect for single column */
+    min-height: 280px;
+  }
+
+  .gallery-item-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .btn-load-more {
+    padding: 0.9rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .featured-comparison {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .featured-before::after {
+    display: none;
+  }
+
+  .featured-image {
+    min-height: 280px;
+  }
+
+  .featured-details {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .featured-stylist-avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .featured-quote {
+    font-size: 0.9rem;
+    padding-left: var(--space-sm);
+  }
+
+  .behind-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+  }
+
+  .behind-item--large {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery-cta-title {
+    font-size: clamp(1.5rem, 6vw, 1.9rem);
+  }
+
+  /* Lightbox small screens */
+  .lightbox-top-bar {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .lightbox-close {
+    width: 40px;
+    height: 40px;
+  }
+
+  .lightbox-image-wrapper {
+    max-width: 94vw;
+    max-height: 60vh;
+  }
+
+  .lightbox-image {
+    max-height: 60vh;
+    border-radius: 8px;
+  }
+
+  .lightbox-nav {
+    width: 36px;
+    height: 36px;
+    bottom: calc(var(--space-xl) + 60px);
+  }
+
+  .lightbox-prev {
+    left: var(--space-md);
+  }
+
+  .lightbox-next {
+    right: var(--space-md);
+  }
+
+  .lightbox-caption-bar {
+    padding: var(--space-sm) var(--space-md) var(--space-lg);
+  }
+
+  .lightbox-title {
+    font-size: 1rem;
+  }
+
+  .lightbox-meta {
+    font-size: 0.8rem;
+  }
+}
+
+/* ============================================
+   5. EXTRA SMALL PHONES (≤360px)
+   ============================================ */
+@media (max-width: 360px) {
+  .gallery-hero-title {
+    font-size: 1.5rem;
+  }
+
+  .gallery-hero-stats {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .gallery-item-image {
+    min-height: 240px;
+  }
+
+  .gallery-item-image img {
+    height: 240px;
+  }
+
+  .gallery-item-info {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .gallery-item-title {
+    font-size: 0.9rem;
+  }
+
+  .featured-image {
+    min-height: 220px;
+  }
+
+  .featured-details {
+    padding: var(--space-md);
+  }
+
+  .featured-service-tag {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+
+  .lightbox-top-bar {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .lightbox-image-wrapper {
+    max-height: 55vh;
+  }
+
+  .lightbox-image {
+    max-height: 55vh;
+  }
+
+  .lightbox-nav {
+    bottom: calc(var(--space-lg) + 50px);
+  }
+}
+
+/* ============================================
+   6. TOUCH DEVICE OPTIMIZATIONS
+   ============================================ */
+@media (hover: none) and (pointer: coarse) {
+  .gallery-item:hover,
+  .behind-item:hover,
+  .btn-load-more:hover {
+    transform: none;
+    border-color: var(--color-border);
+    box-shadow: none;
+  }
+
+  .gallery-item:hover .gallery-item-image img,
+  .behind-item:hover img {
+    transform: none;
+  }
+
+  /* Always show overlay on touch for discoverability */
+  .gallery-item-overlay {
+    opacity: 1;
+    background: linear-gradient(
+      to top,
+      rgba(11, 61, 46, 0.85) 0%,
+      rgba(11, 61, 46, 0.3) 35%,
+      transparent 60%
+    );
+  }
+
+  .gallery-item-zoom {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .gallery-item-overlay-info {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .behind-item-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 50%);
+  }
+
+  .behind-item-caption {
+    transform: translateY(0);
+  }
+
+  .filter-btn:hover {
+    border-color: var(--color-border);
+    color: var(--color-text-secondary);
+  }
+
+  .filter-btn.is-active:hover {
+    border-color: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  .gallery-item,
+  .filter-btn,
+  .sort-select,
+  .btn-load-more,
+  .lightbox-close,
+  .lightbox-nav {
+    min-height: 44px;
+  }
+
+  .gallery-item,
+  .filter-btn,
+  .btn-load-more,
+  .lightbox-close,
+  .lightbox-nav {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* ============================================
+   7. LANDSCAPE ORIENTATION ON MOBILE
+   ============================================ */
+@media (max-width: 768px) and (orientation: landscape) {
+  .gallery-hero {
+    min-height: auto;
+    padding: calc(64px + var(--space-lg)) var(--space-md) var(--space-lg);
+  }
+
+  .gallery-hero-title {
+    font-size: clamp(1.6rem, 5vw, 2rem);
+  }
+
+  .gallery-hero-stats {
+    flex-direction: row;
+    max-width: 100%;
+    padding: var(--space-lg) var(--space-xl);
+  }
+
+  .gallery-stat-divider {
+    width: 1px;
+    height: 40px;
+  }
+
+  .gallery-grid {
+    column-count: 3;
+    column-gap: var(--space-sm);
+  }
+
+  .gallery-item {
+    margin-bottom: var(--space-sm);
+  }
+
+  .gallery-item-image {
+    min-height: auto;
+  }
+
+  .gallery-item-image img {
+    height: auto;
+  }
+
+  .featured-transformation-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featured-comparison {
+    min-height: 260px;
+  }
+
+  .behind-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 160px;
+  }
+
+  .behind-item--large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .gallery-cta-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .gallery-cta-actions .btn {
+    width: auto;
+  }
+
+  /* Lightbox landscape */
+  .lightbox-image-wrapper {
+    max-height: 70vh;
+  }
+
+  .lightbox-image {
+    max-height: 70vh;
+  }
+
+  .lightbox-nav {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* ============================================
+   8. HIGH-DPI / RETINA DISPLAYS
+   ============================================ */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .gallery-item-image img,
+  .featured-image img,
+  .behind-item img,
+  .featured-stylist-avatar {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* ============================================
+   9. PRINT STYLES
+   ============================================ */
+@media print {
+  .gallery-filter,
+  .gallery-item-zoom,
+  .btn-load-more,
+  .gallery-cta-actions .btn-secondary,
+  .lightbox-top-bar,
+  .lightbox-nav,
+  .lightbox-caption-bar {
+    display: none !important;
+  }
+
+  .gallery-hero::before,
+  .gallery-cta::before {
+    display: none !important;
+  }
+
+  .gallery-item,
+  .behind-item,
+  .featured-transformation-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border: 1px solid #ddd;
+  }
+
+  .gallery-item-overlay,
+  .behind-item-overlay {
+    display: none !important;
+  }
+
+  .gallery-grid {
+    column-count: 2;
+  }
+}

@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - SalonBook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="loaded">
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#" class="logo">SalonBook</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stylists.html">Stylists</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li>
+            <a href="contact.html" class="nav-cta"
+              >Contact <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ====== GALLERY HERO ====== -->
+      <section class="gallery-hero" id="gallery">
+        <div class="gallery-hero-container">
+          <div class="gallery-hero-content" data-reveal="up">
+            <span class="section-label">Portfolio</span>
+            <h1 class="gallery-hero-title">Our Work,<br />Your Inspiration</h1>
+            <p class="gallery-hero-subtitle">
+              Browse real transformations, signature styles, and the artistry
+              behind every appointment.
+            </p>
+          </div>
+          <div
+            class="gallery-hero-stats"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+            <div class="gallery-stat-item">
+              <span class="gallery-stat-number">2,400+</span>
+              <span class="gallery-stat-label">Styles Created</span>
+            </div>
+            <div class="gallery-stat-divider"></div>
+            <div class="gallery-stat-item">
+              <span class="gallery-stat-number">150+</span>
+              <span class="gallery-stat-label">In Portfolio</span>
+            </div>
+            <div class="gallery-stat-divider"></div>
+            <div class="gallery-stat-item">
+              <span class="gallery-stat-number">4.9</span>
+              <span class="gallery-stat-label">Avg. Rating</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== GALLERY FILTER ====== -->
+      <section class="gallery-filter">
+        <div class="gallery-filter-container">
+          <div class="filter-group" data-reveal="up" data-reveal-delay="100">
+            <span class="filter-label">Filter by:</span>
+            <button
+              type="button"
+              class="filter-btn is-active"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button type="button" class="filter-btn" data-filter="haircuts">
+              Haircuts
+            </button>
+            <button type="button" class="filter-btn" data-filter="coloring">
+              Coloring
+            </button>
+            <button type="button" class="filter-btn" data-filter="styling">
+              Styling
+            </button>
+            <button type="button" class="filter-btn" data-filter="treatments">
+              Treatments
+            </button>
+            <button type="button" class="filter-btn" data-filter="bridal">
+              Bridal
+            </button>
+          </div>
+          <div class="filter-sort" data-reveal="up" data-reveal-delay="200">
+            <select class="sort-select" aria-label="Sort gallery">
+              <option value="newest">Newest First</option>
+              <option value="popular">Most Popular</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== GALLERY GRID ====== -->
+      <section class="gallery-grid-section">
+        <div class="gallery-grid-container">
+          <div class="gallery-grid" data-reveal-stagger>
+            <!-- Haircuts -->
+            <article
+              class="gallery-item"
+              data-category="haircuts"
+              data-reveal="up"
+              data-reveal-delay="0"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/2a/f1/dc/2af1dc34969b4b05fc0ff309504cb3e4.jpg"
+                  alt="Precision fade haircut"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Precision Fade</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Haircuts • James K.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Haircuts</span>
+                <h3 class="gallery-item-title">Precision Fade</h3>
+                <p class="gallery-item-stylist">by James K.</p>
+              </div>
+            </article>
+
+            <article
+              class="gallery-item"
+              data-category="haircuts"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/22/17/72/221772f6950ffd53c0016b1fe7fd039e.jpg"
+                  alt="Layered bob haircut"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Layered Bob</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Haircuts • Sarah M.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Haircuts</span>
+                <h3 class="gallery-item-title">Layered Bob</h3>
+                <p class="gallery-item-stylist">by Sarah M.</p>
+              </div>
+            </article>
+
+            <!-- Coloring -->
+            <article
+              class="gallery-item"
+              data-category="coloring"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/eb/69/89/eb6989d4b132ed59b90a3a7d07fde0c2.jpg"
+                  alt="Balayage color transformation"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Balayage Blend</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Coloring • Maria L.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Coloring</span>
+                <h3 class="gallery-item-title">Balayage Blend</h3>
+                <p class="gallery-item-stylist">by Maria L.</p>
+              </div>
+            </article>
+
+            <article
+              class="gallery-item"
+              data-category="coloring"
+              data-reveal="up"
+              data-reveal-delay="0"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/1200x/8a/de/0c/8ade0ce06d24b3f9354c0a7deb7e847d.jpg"
+                  alt="Vibrant red color"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Crimson Glow</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Coloring • Maria L.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Coloring</span>
+                <h3 class="gallery-item-title">Crimson Glow</h3>
+                <p class="gallery-item-stylist">by Maria L.</p>
+              </div>
+            </article>
+
+            <!-- Styling -->
+            <article
+              class="gallery-item"
+              data-category="styling"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/0b/fe/42/0bfe4235da28e6ebb8fe321322ec5bd8.jpg"
+                  alt="Elegant updo styling"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Elegant Updo</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Styling • Sarah M.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Styling</span>
+                <h3 class="gallery-item-title">Elegant Updo</h3>
+                <p class="gallery-item-stylist">by Sarah M.</p>
+              </div>
+            </article>
+
+            <article
+              class="gallery-item"
+              data-category="styling"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/bd/4d/58/bd4d588b6d0455ccac8b8b95251a8696.jpg"
+                  alt="Beach waves styling"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Beach Waves</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Styling • David R.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Styling</span>
+                <h3 class="gallery-item-title">Beach Waves</h3>
+                <p class="gallery-item-stylist">by David R.</p>
+              </div>
+            </article>
+
+            <!-- Treatments -->
+            <article
+              class="gallery-item"
+              data-category="treatments"
+              data-reveal="up"
+              data-reveal-delay="0"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/17/df/33/17df337cec7c5b43350175d81da2a4bf.jpg"
+                  alt="Keratin treatment result"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Keratin Silk</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Treatments • James K.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Treatments</span>
+                <h3 class="gallery-item-title">Keratin Silk</h3>
+                <p class="gallery-item-stylist">by James K.</p>
+              </div>
+            </article>
+
+            <article
+              class="gallery-item"
+              data-category="treatments"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/20/af/f6/20aff664f7ddd215f597391f26533359.jpg"
+                  alt="Deep conditioning treatment"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Deep Restore</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Treatments • Maria L.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Treatments</span>
+                <h3 class="gallery-item-title">Deep Restore</h3>
+                <p class="gallery-item-stylist">by Maria L.</p>
+              </div>
+            </article>
+
+            <!-- Bridal -->
+            <article
+              class="gallery-item"
+              data-category="bridal"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/cb/58/cb/cb58cb77d1b64c74095bec969a1b96f7.jpg"
+                  alt="Bridal hair and makeup"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Bridal Elegance</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Bridal • Sarah M.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Bridal</span>
+                <h3 class="gallery-item-title">Bridal Elegance</h3>
+                <p class="gallery-item-stylist">by Sarah M.</p>
+              </div>
+            </article>
+
+            <article
+              class="gallery-item"
+              data-category="bridal"
+              data-reveal="up"
+              data-reveal-delay="0"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/75/48/ac/7548acc6d4c49c49edd7dd203f125f24.jpg"
+                  alt="Wedding party styling"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Wedding Party</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Bridal • David R.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Bridal</span>
+                <h3 class="gallery-item-title">Wedding Party</h3>
+                <p class="gallery-item-stylist">by David R.</p>
+              </div>
+            </article>
+
+            <!-- More Haircuts -->
+            <article
+              class="gallery-item"
+              data-category="haircuts"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/1200x/a2/8e/77/a28e77bf8f794252b0f043c088655040.jpg"
+                  alt="Textured crop haircut"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Textured Crop</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Haircuts • James K.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Haircuts</span>
+                <h3 class="gallery-item-title">Textured Crop</h3>
+                <p class="gallery-item-stylist">by James K.</p>
+              </div>
+            </article>
+
+            <!-- More Coloring -->
+            <article
+              class="gallery-item"
+              data-category="coloring"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="gallery-item-image">
+                <img
+                  src="https://i.pinimg.com/736x/70/62/fd/7062fd0c8856ffe9809b3fad7b533b0a.jpg"
+                  alt="Platinum blonde transformation"
+                  loading="lazy"
+                />
+                <div class="gallery-item-overlay">
+                  <button
+                    type="button"
+                    class="gallery-item-zoom"
+                    aria-label="View full size"
+                  >
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <div class="gallery-item-overlay-info">
+                    <h3 class="gallery-item-overlay-title">Platinum Ice</h3>
+                    <span class="gallery-item-overlay-meta"
+                      >Coloring • Maria L.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item-info">
+                <span class="gallery-item-category">Coloring</span>
+                <h3 class="gallery-item-title">Platinum Ice</h3>
+                <p class="gallery-item-stylist">by Maria L.</p>
+              </div>
+            </article>
+          </div>
+
+          <div
+            class="gallery-load-more"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            <button type="button" class="btn btn-load-more">
+              <i class="fas fa-spinner"></i> Load More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== FEATURED TRANSFORMATION ====== -->
+      <section class="gallery-featured">
+        <div class="gallery-featured-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Spotlight</span>
+            <h2 class="section-title">Transformation of the Month</h2>
+            <p class="section-subtitle">
+              A complete before & after journey — from consultation to
+              confidence.
+            </p>
+          </div>
+          <div
+            class="featured-transformation-card"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+            <div class="featured-comparison">
+              <div class="featured-image featured-before">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop"
+                  alt="Before transformation"
+                />
+                <span class="featured-label">Before</span>
+              </div>
+              <div class="featured-image featured-after">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=1000&fit=crop"
+                  alt="After transformation"
+                />
+                <span class="featured-label">After</span>
+              </div>
+            </div>
+            <div class="featured-details">
+              <div class="featured-stylist">
+                <img
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+                  alt="Sarah M."
+                  class="featured-stylist-avatar"
+                />
+                <div class="featured-stylist-info">
+                  <h4>Sarah M.</h4>
+                  <span>Senior Stylist</span>
+                </div>
+              </div>
+              <div class="featured-services-list">
+                <span class="featured-service-tag">Consultation</span>
+                <span class="featured-service-tag">Color Correction</span>
+                <span class="featured-service-tag">Precision Cut</span>
+                <span class="featured-service-tag">Styling</span>
+              </div>
+              <p class="featured-quote">
+                "I walked in feeling invisible and walked out feeling like
+                myself again. Sarah listened to every concern and delivered
+                magic."
+              </p>
+              <div class="featured-client">
+                <span class="featured-client-name">— Amanda K.</span>
+                <div class="featured-client-rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+              </div>
+              <a href="booking.html?stylist=sarah" class="btn btn-primary"
+                >Book with Sarah</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== BEHIND THE CHAIR ====== -->
+      <section class="gallery-behind">
+        <div class="gallery-behind-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">The Process</span>
+            <h2 class="section-title">Behind the Chair</h2>
+            <p class="section-subtitle">
+              Candid moments from the salon floor — where the magic happens.
+            </p>
+          </div>
+          <div class="behind-grid" data-reveal-stagger>
+            <article
+              class="behind-item behind-item--large"
+              data-reveal="up"
+              data-reveal-delay="0"
+            >
+              <img
+                src="https://i.pinimg.com/1200x/5e/f8/c7/5ef8c739e965dcfbd9fce5cded58c043.jpg"
+                alt="Stylist at work"
+                loading="lazy"
+              />
+              <div class="behind-item-overlay">
+                <span class="behind-item-caption">Color mixing artistry</span>
+              </div>
+            </article>
+            <article
+              class="behind-item"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <img
+                src="https://i.pinimg.com/736x/41/40/54/414054844b350c3edb6e0086bc80ef8d.jpg"
+                alt="Blow dry technique"
+                loading="lazy"
+              />
+              <div class="behind-item-overlay">
+                <span class="behind-item-caption">The perfect blowout</span>
+              </div>
+            </article>
+            <article
+              class="behind-item"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <img
+                src="https://i.pinimg.com/736x/91/8f/40/918f40241cb706815a13720f7c2ff83d.jpg"
+                alt="Detail work"
+                loading="lazy"
+              />
+              <div class="behind-item-overlay">
+                <span class="behind-item-caption">Detail precision</span>
+              </div>
+            </article>
+            <article class="behind-item" data-reveal="up" data-reveal-delay="0">
+              <img
+                src="https://i.pinimg.com/736x/c7/2b/34/c72b3470411cf00864beee461df22b0a.jpg"
+                alt="Client consultation"
+                loading="lazy"
+              />
+              <div class="behind-item-overlay">
+                <span class="behind-item-caption">Consultation first</span>
+              </div>
+            </article>
+            <article
+              class="behind-item behind-item--large"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <img
+                src="https://i.pinimg.com/736x/a0/c1/e7/a0c1e731a6707662eb1bf8eafe472f17.jpg"
+                alt="Salon atmosphere"
+                loading="lazy"
+              />
+              <div class="behind-item-overlay">
+                <span class="behind-item-caption">The salon vibe</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== GALLERY CTA ====== -->
+      <section class="gallery-cta" id="book">
+        <div class="gallery-cta-container">
+          <div class="gallery-cta-content" data-reveal="up">
+            <h2 class="gallery-cta-title">
+              Ready to Be Our<br />Next Feature?
+            </h2>
+            <p class="gallery-cta-subtitle">
+              Every transformation starts with a single booking. Let our
+              stylists create your signature look.
+            </p>
+            <div class="gallery-cta-actions">
+              <a href="booking.html" class="btn btn-primary"
+                >Book Appointment</a
+              >
+              <a href="stylists.html" class="btn btn-secondary"
+                >Meet the Team</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand" data-reveal="up">
+            <a href="#" class="footer-logo">SalonBook</a>
+            <p class="footer-tagline">
+              A modern salon experience built around convenience, quality, and
+              customer loyalty.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links" data-reveal="up" data-reveal-delay="100">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact" data-reveal="up" data-reveal-delay="200">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <span>123 Kimathi Street, Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254712345678">+254 712 345 678</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@salonbook.co.ke">hello@salonbook.co.ke</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2026 SalonBook. All rights reserved.</p>
+          <div class="footer-payment">
+            <span>We accept:</span>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-stripe"></i>
+              <i class="fab fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/referrals.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
