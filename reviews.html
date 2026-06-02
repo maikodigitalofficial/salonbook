@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews — SalonBook</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="loaded">
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="/" class="logo">SalonBook</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stylists.html">Stylists</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li>
+            <a href="contact.html" class="nav-cta"
+              >Contact <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="reviews-hero">
+        <div class="reviews-hero-container">
+          <div class="reviews-hero-content" data-reveal="up">
+            <span class="section-label">Testimonials</span>
+            <h1 class="reviews-hero-title">What Our Clients Say</h1>
+            <p class="reviews-hero-subtitle">
+              Real reviews from real people. Verified by Google.
+            </p>
+          </div>
+          <div
+            class="reviews-hero-stats"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+            <div class="stat-item">
+              <span class="stat-number">4.9</span>
+              <div class="stat-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <span class="stat-label">Average Rating</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">12.5K</span>
+              <span class="stat-label">Total Reviews</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Would Recommend</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filter Bar -->
+      <section
+        class="reviews-filter"
+        data-reveal="fade"
+        data-reveal-delay="100"
+      >
+        <div class="reviews-filter-container">
+          <div class="filter-group">
+            <span class="filter-label">Filter by:</span>
+            <button class="filter-btn is-active" data-filter="all">
+              All Reviews
+            </button>
+            <button class="filter-btn" data-filter="haircut">Haircut</button>
+            <button class="filter-btn" data-filter="color">Color</button>
+            <button class="filter-btn" data-filter="styling">Styling</button>
+            <button class="filter-btn" data-filter="facial">Facial</button>
+            <button class="filter-btn" data-filter="manicure">Manicure</button>
+          </div>
+          <div class="filter-sort">
+            <label class="filter-label">Sort by:</label>
+            <select class="sort-select">
+              <option value="newest">Newest First</option>
+              <option value="highest">Highest Rated</option>
+              <option value="lowest">Lowest Rated</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Grid -->
+      <section class="reviews-grid-section">
+        <div class="reviews-grid-container">
+          <div class="reviews-grid">
+            <!-- Review 1 -->
+            <article
+              class="review-card"
+              data-service="haircut"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face"
+                    alt="Amanda K."
+                  />
+                </div>
+                <div class="review-meta">
+                  <div class="review-name-row">
+                    <span class="review-name">Amanda K.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="review-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="review-rating-row">
+                    <div class="review-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="review-date">2 weeks ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>
+                  "Absolutely the best salon experience I've ever had. Sarah
+                  understood exactly what I wanted and delivered beyond my
+                  expectations. My hair has never looked better. Already booked
+                  my next appointment!"
+                </p>
+              </div>
+              <div class="review-footer">
+                <div class="review-service">
+                  <span>Service:</span> Precision Haircut
+                </div>
+                <div class="review-stylist">
+                  <i class="fas fa-user"></i> by Sarah M.
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 2 -->
+            <article
+              class="review-card"
+              data-service="styling"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+                    alt="Marcus T."
+                  />
+                </div>
+                <div class="review-meta">
+                  <div class="review-name-row">
+                    <span class="review-name">Marcus T.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="review-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="review-rating-row">
+                    <div class="review-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="review-date">1 month ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>
+                  "The membership is worth every penny. Priority booking means I
+                  never have to wait, and the 15% discount adds up fast. James
+                  is my go-to stylist — he knows exactly how to handle my hair
+                  type."
+                </p>
+              </div>
+              <div class="review-footer">
+                <div class="review-service">
+                  <span>Service:</span> Membership + Styling
+                </div>
+                <div class="review-stylist">
+                  <i class="fas fa-user"></i> by James K.
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 3 -->
+            <article
+              class="review-card"
+              data-service="color"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
+                    alt="Priya S."
+                  />
+                </div>
+                <div class="review-meta">
+                  <div class="review-name-row">
+                    <span class="review-name">Priya S.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="review-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="review-rating-row">
+                    <div class="review-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="review-date">3 weeks ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>
+                  "Maria transformed my hair color completely. I was nervous
+                  about going blonde but she walked me through every step. The
+                  booking via WhatsApp was so convenient. Best salon in Nairobi,
+                  hands down."
+                </p>
+              </div>
+              <div class="review-footer">
+                <div class="review-service">
+                  <span>Service:</span> Hair Coloring
+                </div>
+                <div class="review-stylist">
+                  <i class="fas fa-user"></i> by Maria L.
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 4 -->
+            <article
+              class="review-card"
+              data-service="facial"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=face"
+                    alt="Zara M."
+                  />
+                </div>
+                <div class="review-meta">
+                  <div class="review-name-row">
+                    <span class="review-name">Zara M.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="review-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="review-rating-row">
+                    <div class="review-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="review-date">5 days ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>
+                  "The facial treatment was incredibly relaxing and my skin has
+                  never looked clearer. David took the time to understand my
+                  skin concerns and customized the treatment perfectly. Already
+                  booked my next session."
+                </p>
+              </div>
+              <div class="review-footer">
+                <div class="review-service">
+                  <span>Service:</span> Facial Treatment
+                </div>
+                <div class="review-stylist">
+                  <i class="fas fa-user"></i> by David R.
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 5 -->
+            <article
+              class="review-card"
+              data-service="manicure"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=face"
+                    alt="Leila N."
+                  />
+                </div>
+                <div class="review-meta">
+                  <div class="review-name-row">
+                    <span class="review-name">Leila N.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="review-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="review-rating-row">
+                    <div class="review-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="review-date">1 week ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>
+                  "My manicure lasted three weeks without a single chip. Sarah's
+                  attention to detail is unmatched. The salon atmosphere is so
+                  calming and the staff makes you feel like family. Highly
+                  recommend!"
+                </p>
+              </div>
+              <div class="review-footer">
+                <div class="review-service"><span>Service:</span> Manicure</div>
+                <div class="review-stylist">
+                  <i class="fas fa-user"></i> by Sarah M.
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 6 -->
+            <article
+              class="review-card"
+              data-service="haircut"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face"
+                    alt="Brian O."
+                  />
+                </div>
+                <div class="review-meta">
+                  <div class="review-name-row">
+                    <span class="review-name">Brian O.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="review-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="review-rating-row">
+                    <div class="review-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="review-date">3 days ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>
+                  "Finally found a barber who understands fades. James gave me
+                  the cleanest cut I've had in years. The online booking system
+                  is seamless and I love getting reminders on WhatsApp. Five
+                  stars all the way."
+                </p>
+              </div>
+              <div class="review-footer">
+                <div class="review-service">
+                  <span>Service:</span> Precision Haircut
+                </div>
+                <div class="review-stylist">
+                  <i class="fas fa-user"></i> by James K.
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 7 -->
+            <article
+              class="review-card"
+              data-service="color"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&fit=crop&crop=face"
+                    alt="Chloe W."
+                  />
+                </div>
+                <div class="review-meta">
+                  <div class="review-name-row">
+                    <span class="review-name">Chloe W.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="review-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="review-rating-row">
+                    <div class="review-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="review-date">2 months ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>
+                  "Maria is a color genius. She took my brassy blonde to a
+                  gorgeous ash tone that gets compliments everywhere I go. The
+                  salon uses premium products that actually protect your hair.
+                  Worth every shilling."
+                </p>
+              </div>
+              <div class="review-footer">
+                <div class="review-service">
+                  <span>Service:</span> Hair Coloring
+                </div>
+                <div class="review-stylist">
+                  <i class="fas fa-user"></i> by Maria L.
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 8 -->
+            <article
+              class="review-card"
+              data-service="styling"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
+                    alt="Daniel K."
+                  />
+                </div>
+                <div class="review-meta">
+                  <div class="review-name-row">
+                    <span class="review-name">Daniel K.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="review-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="review-rating-row">
+                    <div class="review-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="review-date">4 weeks ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>
+                  "Had my wedding styling done here and I couldn't have been
+                  happier. The team went above and beyond, even staying late to
+                  make sure everything was perfect. My groomsmen looked sharp
+                  and I felt like a million bucks."
+                </p>
+              </div>
+              <div class="review-footer">
+                <div class="review-service">
+                  <span>Service:</span> Hair Styling
+                </div>
+                <div class="review-stylist">
+                  <i class="fas fa-user"></i> by Sarah M.
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 9 -->
+            <article
+              class="review-card"
+              data-service="facial"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face"
+                    alt="Amina H."
+                  />
+                </div>
+                <div class="review-meta">
+                  <div class="review-name-row">
+                    <span class="review-name">Amina H.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="review-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="review-rating-row">
+                    <div class="review-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="review-date">6 days ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>
+                  "The anti-aging facial here is a game changer. David uses
+                  techniques I've never experienced at other salons. My skin is
+                  glowing and the fine lines around my eyes have visibly
+                  reduced. This is now my monthly ritual."
+                </p>
+              </div>
+              <div class="review-footer">
+                <div class="review-service">
+                  <span>Service:</span> Facial Treatment
+                </div>
+                <div class="review-stylist">
+                  <i class="fas fa-user"></i> by David R.
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Load More -->
+          <div
+            class="reviews-load-more"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+            <button type="button" class="btn btn-load-more">
+              Load More Reviews
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Write a Review CTA -->
+      <section class="write-review">
+        <div class="write-review-container">
+          <div class="write-review-content" data-reveal="up">
+            <h2 class="write-review-title">Had a Great Experience?</h2>
+            <p class="write-review-subtitle">
+              Share your story and help others discover SalonBook.
+            </p>
+            <a
+              href="https://g.page/r/your-google-review-link"
+              target="_blank"
+              class="btn btn-write-review"
+            >
+              <i class="fab fa-google"></i>
+              Write a Review on Google
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand" data-reveal="up">
+            <a href="index.html" class="footer-logo">SalonBook</a>
+            <p class="footer-tagline">
+              A modern salon experience built around convenience, quality, and
+              customer loyalty.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links" data-reveal="up" data-reveal-delay="100">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact" data-reveal="up" data-reveal-delay="200">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <span>123 Kimathi Street, Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254712345678">+254 712 345 678</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@salonbook.co.ke">hello@salonbook.co.ke</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2026 SalonBook. All rights reserved.</p>
+          <div class="footer-payment">
+            <span>We accept:</span>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-stripe"></i>
+              <i class="fab fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

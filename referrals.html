@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Referrals -SalonBook</title>
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/referrals.css" />
+    <link rel="stylesheet" href="css/booking.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="/" class="logo">SalonBook</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stylists.html">Stylists</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li>
+            <a href="contact.html" class="nav-cta"
+              >Contact <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============================================
+    SECTION 1 — REFERRALS HERO
+    ============================================ -->
+      <section class="referrals-hero" id="referralsHero">
+        <div class="referrals-hero-container">
+          <div class="referrals-hero-content" data-reveal="up">
+            <h1 class="referrals-hero-title">
+              <span class="headline-line">Refer Friends.</span>
+              <span class="headline-line">Earn Rewards.</span>
+            </h1>
+            <p class="referrals-hero-subtitle">
+              Share your unique referral link, help your friends discover our
+              services, and earn exclusive rewards when they book.
+            </p>
+            <div class="referrals-hero-actions">
+              <a href="#referralProgram" class="btn btn-primary btn--large">
+                Start Referring
+              </a>
+              <a href="booking.html" class="btn btn-secondary btn--large">
+                Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+    SECTION 2 — HOW IT WORKS
+    ============================================ -->
+      <section class="referrals-how-it-works" id="referralProgram">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">How It Works</span>
+            <h2 class="section-title">Refer In 3 Easy Steps</h2>
+            <p class="section-subtitle">
+              Share, book, earn. It is that simple.
+            </p>
+          </div>
+
+          <div
+            class="referrals-steps-row"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+            <!-- Step 1 -->
+            <div
+              class="referrals-step"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="referrals-step-icon-wrap">
+                <i class="fas fa-share-nodes"></i>
+              </div>
+              <h3 class="referrals-step-title">Share Your Referral Link</h3>
+              <p class="referrals-step-desc">
+                Copy your unique link and send it to friends via WhatsApp, SMS,
+                or social media.
+              </p>
+            </div>
+
+            <!-- Connector -->
+            <div
+              class="referrals-step-connector"
+              data-reveal="fade"
+              data-reveal-delay="250"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+              class="referrals-step"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="referrals-step-icon-wrap">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h3 class="referrals-step-title">Friend Books An Appointment</h3>
+              <p class="referrals-step-desc">
+                They use your link to book their first visit. No code needed, no
+                hassle.
+              </p>
+            </div>
+
+            <!-- Connector -->
+            <div
+              class="referrals-step-connector"
+              data-reveal="fade"
+              data-reveal-delay="350"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+              class="referrals-step"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="referrals-step-icon-wrap">
+                <i class="fas fa-gift"></i>
+              </div>
+              <h3 class="referrals-step-title">Earn Rewards</h3>
+              <p class="referrals-step-desc">
+                You both get KES 2,000 credit applied instantly to your
+                accounts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+    SECTION 3 — REWARDS PROGRAM
+    ============================================ -->
+      <section class="rewards-program" id="rewardsProgram">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Rewards</span>
+            <h2 class="section-title">Earn As You Refer</h2>
+            <p class="section-subtitle">
+              The more friends you bring, the bigger the rewards.
+            </p>
+          </div>
+
+          <div class="rewards-grid">
+            <!-- Reward Card 1 -->
+            <div class="reward-card" data-reveal="up" data-reveal-delay="100">
+              <div class="reward-tier">
+                <span class="reward-tier-number">1</span>
+                <span class="reward-tier-label">Referral</span>
+              </div>
+              <div class="reward-icon">
+                <i class="fas fa-coins"></i>
+              </div>
+              <h3 class="reward-value">KES 500</h3>
+              <p class="reward-name">Salon Credit</p>
+              <p class="reward-desc">
+                Instant credit applied to your account for your next visit.
+              </p>
+            </div>
+
+            <!-- Reward Card 2 -->
+            <div class="reward-card" data-reveal="up" data-reveal-delay="200">
+              <div class="reward-tier">
+                <span class="reward-tier-number">3</span>
+                <span class="reward-tier-label">Referrals</span>
+              </div>
+              <div class="reward-icon">
+                <i class="fas fa-spa"></i>
+              </div>
+              <h3 class="reward-value">Free</h3>
+              <p class="reward-name">Premium Treatment</p>
+              <p class="reward-desc">
+                Choose any hair or skin treatment on us. Full value covered.
+              </p>
+            </div>
+
+            <!-- Reward Card 3 -->
+            <div
+              class="reward-card reward-card--featured"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="reward-badge">Most Popular</div>
+              <div class="reward-tier">
+                <span class="reward-tier-number">5</span>
+                <span class="reward-tier-label">Referrals</span>
+              </div>
+              <div class="reward-icon">
+                <i class="fas fa-crown"></i>
+              </div>
+              <h3 class="reward-value">VIP</h3>
+              <p class="reward-name">Membership Upgrade</p>
+              <p class="reward-desc">
+                Unlock priority booking, exclusive events, and deeper discounts.
+              </p>
+            </div>
+
+            <!-- Reward Card 4 -->
+            <div class="reward-card" data-reveal="up" data-reveal-delay="400">
+              <div class="reward-tier">
+                <span class="reward-tier-number">10</span>
+                <span class="reward-tier-label">Referrals</span>
+              </div>
+              <div class="reward-icon">
+                <i class="fas fa-gem"></i>
+              </div>
+              <h3 class="reward-value">Luxury</h3>
+              <p class="reward-name">Beauty Package</p>
+              <p class="reward-desc">
+                Full day of pampering. Hair, nails, facial, and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 4 — REFERRAL DASHBOARD PREVIEW
+        ============================================ -->
+      <section class="referral-dashboard" id="referralDashboard">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Dashboard</span>
+            <h2 class="section-title">Track Your Progress</h2>
+            <p class="section-subtitle">
+              See your referrals, rewards, and what is coming next.
+            </p>
+          </div>
+
+          <div class="dashboard-card" data-reveal="up" data-reveal-delay="100">
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+              <div class="dashboard-user">
+                <div class="dashboard-avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="dashboard-user-info">
+                  <span class="dashboard-user-name">Your Dashboard</span>
+                  <span class="dashboard-user-status">Active Member</span>
+                </div>
+              </div>
+              <div class="dashboard-link">
+                <span class="dashboard-link-label">Your Referral Link</span>
+                <div class="dashboard-link-box">
+                  <span class="dashboard-link-url"
+                    >salonbook.co.ke/ref/sarah-m</span
+                  >
+                  <button
+                    type="button"
+                    class="dashboard-link-copy"
+                    onclick="copyReferralLink()"
+                  >
+                    <i class="fas fa-copy"></i>
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dashboard Stats -->
+            <div class="dashboard-stats">
+              <div
+                class="dashboard-stat"
+                data-reveal="up"
+                data-reveal-delay="150"
+              >
+                <div class="dashboard-stat-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="dashboard-stat-content">
+                  <span class="dashboard-stat-value">7</span>
+                  <span class="dashboard-stat-label">Total Referrals</span>
+                </div>
+              </div>
+
+              <div
+                class="dashboard-stat"
+                data-reveal="up"
+                data-reveal-delay="200"
+              >
+                <div class="dashboard-stat-icon">
+                  <i class="fas fa-wallet"></i>
+                </div>
+                <div class="dashboard-stat-content">
+                  <span class="dashboard-stat-value">KES 3,500</span>
+                  <span class="dashboard-stat-label">Credits Earned</span>
+                </div>
+              </div>
+
+              <div
+                class="dashboard-stat"
+                data-reveal="up"
+                data-reveal-delay="250"
+              >
+                <div class="dashboard-stat-icon">
+                  <i class="fas fa-gift"></i>
+                </div>
+                <div class="dashboard-stat-content">
+                  <span class="dashboard-stat-value">2</span>
+                  <span class="dashboard-stat-label">Available Rewards</span>
+                </div>
+              </div>
+
+              <div
+                class="dashboard-stat"
+                data-reveal="up"
+                data-reveal-delay="300"
+              >
+                <div class="dashboard-stat-icon">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <div class="dashboard-stat-content">
+                  <span class="dashboard-stat-value">3</span>
+                  <span class="dashboard-stat-label">To Next Reward</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dashboard Progress -->
+            <div
+              class="dashboard-progress"
+              data-reveal="up"
+              data-reveal-delay="350"
+            >
+              <div class="dashboard-progress-header">
+                <span class="dashboard-progress-label"
+                  >Progress to VIP Upgrade</span
+                >
+                <span class="dashboard-progress-value">5 of 10 referrals</span>
+              </div>
+              <div class="dashboard-progress-bar">
+                <div class="dashboard-progress-fill" style="width: 77%"></div>
+              </div>
+              <div class="dashboard-progress-milestones">
+                <span class="milestone milestone--reached">1</span>
+                <span class="milestone milestone--reached">3</span>
+                <span class="milestone milestone--reached">5</span>
+                <span class="milestone">10</span>
+              </div>
+            </div>
+
+            <!-- Dashboard Footer -->
+            <div
+              class="dashboard-footer"
+              data-reveal="up"
+              data-reveal-delay="400"
+            >
+              <p class="dashboard-footer-text">
+                <i class="fas fa-info-circle"></i>
+                Rewards are applied automatically after your friend completes
+                their first appointment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 5 — SUCCESS STORIES
+        ============================================ -->
+      <section class="success-stories" id="successStories">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Success Stories</span>
+            <h2 class="section-title">Real Members, Real Rewards</h2>
+            <p class="section-subtitle">
+              See what others have earned through referrals.
+            </p>
+          </div>
+
+          <div class="success-grid">
+            <!-- Story 1 -->
+            <div class="success-card" data-reveal="up" data-reveal-delay="100">
+              <div class="success-avatar">
+                <img
+                  src="https://i.pinimg.com/736x/23/93/b3/2393b3e6f9db7113a7a8367db4a2bbbf.jpg"
+                  alt="Sarah M."
+                />
+              </div>
+              <h3 class="success-name">Sarah M.</h3>
+              <p class="success-count">5</p>
+              <p class="success-count-label">Friends Referred</p>
+              <div class="success-reward">
+                <i class="fas fa-crown"></i>
+                <span>Earned VIP Membership</span>
+              </div>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="success-card" data-reveal="up" data-reveal-delay="200">
+              <div class="success-avatar">
+                <img
+                  src="https://i.pinimg.com/1200x/f7/9d/6e/f79d6e7b27ad1311430e63c1faded840.jpg"
+                  alt="Brian K."
+                />
+              </div>
+              <h3 class="success-name">Brian K.</h3>
+              <p class="success-count">10</p>
+              <p class="success-count-label">Friends Referred</p>
+              <div class="success-reward">
+                <i class="fas fa-gem"></i>
+                <span>Received Beauty Package</span>
+              </div>
+            </div>
+
+            <!-- Story 3 -->
+            <div class="success-card" data-reveal="up" data-reveal-delay="300">
+              <div class="success-avatar">
+                <img
+                  src="https://i.pinimg.com/736x/ea/c5/1a/eac51ad614181bce9cd0bf2744927ba5.jpg"
+                  alt="Angela W."
+                />
+              </div>
+              <h3 class="success-name">Angela W.</h3>
+              <p class="success-count">3</p>
+              <p class="success-count-label">Friends Referred</p>
+              <div class="success-reward">
+                <i class="fas fa-spa"></i>
+                <span>Earned Free Treatment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 6 — REFERRAL LEADERBOARD
+        ============================================ -->
+      <section class="referral-leaderboard" id="leaderboard">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Leaderboard</span>
+            <h2 class="section-title">Top Referrers This Month</h2>
+            <p class="section-subtitle">
+              See who is leading the pack. Climb the ranks and earn bigger
+              rewards.
+            </p>
+          </div>
+
+          <div
+            class="leaderboard-card"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            <!-- Leaderboard Header -->
+            <div class="leaderboard-header">
+              <div class="leaderboard-header-rank">Rank</div>
+              <div class="leaderboard-header-member">Member</div>
+              <div class="leaderboard-header-referrals">Referrals</div>
+              <div class="leaderboard-header-reward">Reward Earned</div>
+            </div>
+
+            <!-- Row 1 -->
+            <div
+              class="leaderboard-row leaderboard-row--first"
+              data-reveal="up"
+              data-reveal-delay="150"
+            >
+              <div class="leaderboard-rank">
+                <span class="rank-badge rank-badge--gold">1</span>
+              </div>
+              <div class="leaderboard-member">
+                <div class="leaderboard-avatar">
+                  <img
+                    src="https://i.pinimg.com/736x/23/93/b3/2393b3e6f9db7113a7a8367db4a2bbbf.jpg"
+                    alt="Sarah M."
+                  />
+                </div>
+                <span class="leaderboard-name">Sarah M.</span>
+              </div>
+              <div class="leaderboard-referrals">
+                <span class="referrals-count">14</span>
+                <span class="referrals-label">Referrals</span>
+              </div>
+              <div class="leaderboard-reward">
+                <i class="fas fa-gem"></i>
+                <span>Luxury Package</span>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div
+              class="leaderboard-row"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="leaderboard-rank">
+                <span class="rank-badge rank-badge--silver">2</span>
+              </div>
+              <div class="leaderboard-member">
+                <div class="leaderboard-avatar">
+                  <img
+                    src="https://i.pinimg.com/736x/ea/c5/1a/eac51ad614181bce9cd0bf2744927ba5.jpg"
+                    alt="Angela K."
+                  />
+                </div>
+                <span class="leaderboard-name">Angela K.</span>
+              </div>
+              <div class="leaderboard-referrals">
+                <span class="referrals-count">12</span>
+                <span class="referrals-label">Referrals</span>
+              </div>
+              <div class="leaderboard-reward">
+                <i class="fas fa-crown"></i>
+                <span>VIP Membership</span>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div
+              class="leaderboard-row"
+              data-reveal="up"
+              data-reveal-delay="250"
+            >
+              <div class="leaderboard-rank">
+                <span class="rank-badge rank-badge--bronze">3</span>
+              </div>
+              <div class="leaderboard-member">
+                <div class="leaderboard-avatar">
+                  <img
+                    src="https://i.pinimg.com/1200x/f7/9d/6e/f79d6e7b27ad1311430e63c1faded840.jpg"
+                    alt="Brian W."
+                  />
+                </div>
+                <span class="leaderboard-name">Brian W.</span>
+              </div>
+              <div class="leaderboard-referrals">
+                <span class="referrals-count">9</span>
+                <span class="referrals-label">Referrals</span>
+              </div>
+              <div class="leaderboard-reward">
+                <i class="fas fa-spa"></i>
+                <span>Free Treatment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 7 — REFERRAL FAQ
+        ============================================ -->
+      <section class="faq-section" id="faq">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Referral Questions</h2>
+            <p class="section-subtitle">
+              Quick answers about referring friends and earning rewards.
+            </p>
+          </div>
+
+          <div class="faq-list" data-reveal="up" data-reveal-delay="100">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text"
+                  >When do I receive rewards?</span
+                >
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Rewards are applied instantly once your friend completes
+                    their first paid appointment. There is no waiting period —
+                    as soon as they check out, both your account and theirs are
+                    credited.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text"
+                  >Is there a referral limit?</span
+                >
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    No limit. Refer as many friends as you like and keep
+                    earning. The more you share, the more rewards you unlock —
+                    from salon credit all the way up to luxury beauty packages.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">How do I track referrals?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Log into your dashboard anytime to see how many friends have
+                    signed up, which rewards you have earned, and how close you
+                    are to the next milestone. Everything updates in real time.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text"
+                  >Can existing clients be referred?</span
+                >
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    The referral program is for new clients only. Your friend
+                    must be booking their first appointment with us for the
+                    referral to count and for rewards to be issued.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">When do credits expire?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Referral credits are valid for 12 months from the date they
+                    are issued. You will receive a reminder 30 days before
+                    expiry so you never miss a chance to use them.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 8 — FINAL CTA
+        ============================================ -->
+      <section class="referrals-final-cta-section" id="referralsFinalCta">
+        <div class="container">
+          <div class="referrals-final-cta-card" data-reveal="up">
+            <h2 class="referrals-final-cta-headline">
+              Start Earning Rewards Today
+            </h2>
+            <p class="referrals-final-cta-subtext">
+              Invite friends, grow your rewards, and enjoy exclusive benefits.
+            </p>
+            <div class="referrals-final-cta-actions">
+              <button
+                type="button"
+                class="btn btn-primary btn--large"
+                onclick="copyReferralLink()"
+              >
+                <i class="fas fa-link"></i>
+                Join Referral Program
+              </button>
+              <a href="booking.html" class="btn btn-secondary btn--large">
+                Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand" data-reveal="up">
+            <a href="#" class="footer-logo">SalonBook</a>
+            <p class="footer-tagline">
+              A modern salon experience built around convenience, quality, and
+              customer loyalty.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links" data-reveal="up" data-reveal-delay="100">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact" data-reveal="up" data-reveal-delay="200">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <span>123 Kimathi Street, Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254712345678">+254 712 345 678</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@salonbook.co.ke">hello@salonbook.co.ke</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2026 SalonBook. All rights reserved.</p>
+          <div class="footer-payment">
+            <span>We accept:</span>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-stripe"></i>
+              <i class="fab fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/referrals.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

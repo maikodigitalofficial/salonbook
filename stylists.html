@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylists — Premium Salon Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/stylists.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="loaded">
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="/" class="logo">SalonBook</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stylists.html">Stylists</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li>
+            <a href="contact.html" class="nav-cta"
+              >Contact <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Stylists Hero -->
+      <section class="stylists-hero">
+        <div class="stylists-hero-container">
+          <div class="stylists-hero-content" data-reveal="up">
+            <span class="section-label">Our Team</span>
+            <h1 class="stylists-hero-title">Meet the Artists</h1>
+            <p class="stylists-hero-subtitle">
+              Hand-picked professionals who turn your vision into reality.
+            </p>
+          </div>
+          <div
+            class="stylists-hero-stats"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+            <div class="stat-item">
+              <span class="stat-number">8</span>
+              <span class="stat-label">Expert Stylists</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Years Average Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">4.9</span>
+              <div class="stat-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <span class="stat-label">Average Rating</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stylists Filter -->
+      <section
+        class="stylists-filter"
+        data-reveal="fade"
+        data-reveal-delay="100"
+        id="stylists"
+      >
+        <div class="stylists-filter-container">
+          <div class="filter-group">
+            <span class="filter-label">Specialty:</span>
+            <button class="filter-btn is-active" data-filter="all">
+              All Stylists
+            </button>
+            <button class="filter-btn" data-filter="haircut">Haircuts</button>
+            <button class="filter-btn" data-filter="color">Color</button>
+            <button class="filter-btn" data-filter="styling">Styling</button>
+            <button class="filter-btn" data-filter="facial">Facial</button>
+            <button class="filter-btn" data-filter="manicure">Manicure</button>
+          </div>
+          <div class="filter-sort">
+            <label class="filter-label">Sort by:</label>
+            <select class="sort-select">
+              <option value="featured">Featured</option>
+              <option value="rating">Highest Rated</option>
+              <option value="experience">Most Experienced</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stylists Grid -->
+      <section class="stylists-grid-section">
+        <div class="stylists-grid-container">
+          <div class="stylists-grid">
+            <!-- Stylist 1 -->
+            <article
+              class="stylist-card"
+              data-specialty="haircut styling"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="stylist-card-image">
+                <img
+                  src="https://i.pinimg.com/736x/7b/03/5a/7b035adcae897be97f944cd0c8220440.jpg"
+                  alt="Sarah Mitchell"
+                />
+                <div class="stylist-card-badge">
+                  <span class="badge-text">Top Rated</span>
+                </div>
+              </div>
+              <div class="stylist-card-body">
+                <div class="stylist-card-header">
+                  <h3 class="stylist-name">Sarah Mitchell</h3>
+                  <div class="stylist-rating">
+                    <span class="rating-stars">★★★★★</span>
+                    <span class="rating-score">4.9</span>
+                    <span class="rating-count">(342)</span>
+                  </div>
+                </div>
+                <p class="stylist-title">Senior Stylist & Colorist</p>
+                <p class="stylist-bio">
+                  12 years of precision cutting and balayage mastery. Sarah's
+                  clients travel across Nairobi for her signature layered cuts.
+                </p>
+                <div class="stylist-specialties">
+                  <span class="specialty-tag">Haircuts</span>
+                  <span class="specialty-tag">Color</span>
+                  <span class="specialty-tag">Balayage</span>
+                </div>
+                <div class="stylist-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>12 yrs exp</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Next: Today 2PM</span>
+                  </div>
+                </div>
+                <a
+                  href="stylist-profile.html?id=sarah-mitchell"
+                  class="btn btn-stylist-profile"
+                >
+                  View Profile
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Stylist 2 -->
+            <article
+              class="stylist-card"
+              data-specialty="haircut styling"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="stylist-card-image">
+                <img
+                  src="https://i.pinimg.com/736x/8d/b8/b1/8db8b1198600984ac455f10b041f2fb3.jpg"
+                  alt="James Kimani"
+                />
+              </div>
+              <div class="stylist-card-body">
+                <div class="stylist-card-header">
+                  <h3 class="stylist-name">James Kimani</h3>
+                  <div class="stylist-rating">
+                    <span class="rating-stars">★★★★★</span>
+                    <span class="rating-score">4.9</span>
+                    <span class="rating-count">(287)</span>
+                  </div>
+                </div>
+                <p class="stylist-title">Master Barber & Grooming</p>
+                <p class="stylist-bio">
+                  The fade specialist. James combines classic barbering with
+                  modern techniques for the cleanest cuts in the city.
+                </p>
+                <div class="stylist-specialties">
+                  <span class="specialty-tag">Fades</span>
+                  <span class="specialty-tag">Beard</span>
+                  <span class="specialty-tag">Texture</span>
+                </div>
+                <div class="stylist-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>10 yrs exp</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Next: Tomorrow 10AM</span>
+                  </div>
+                </div>
+                <a
+                  href="stylist-profile.html?id=james-kimani"
+                  class="btn btn-stylist-profile"
+                >
+                  View Profile
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Stylist 3 -->
+            <article
+              class="stylist-card"
+              data-specialty="color styling"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="stylist-card-image">
+                <img
+                  src="https://i.pinimg.com/736x/29/d7/d2/29d7d26db9ae3de70d1b196b4f6cc138.jpg"
+                  alt="Maria Lopez"
+                />
+                <div class="stylist-card-badge stylist-card-badge--color">
+                  <span class="badge-text">Color Expert</span>
+                </div>
+              </div>
+              <div class="stylist-card-body">
+                <div class="stylist-card-header">
+                  <h3 class="stylist-name">Maria Lopez</h3>
+                  <div class="stylist-rating">
+                    <span class="rating-stars">★★★★★</span>
+                    <span class="rating-score">5.0</span>
+                    <span class="rating-count">(198)</span>
+                  </div>
+                </div>
+                <p class="stylist-title">Creative Color Director</p>
+                <p class="stylist-bio">
+                  From subtle highlights to full transformations, Maria's color
+                  work is artistry. Trained in London and Milan.
+                </p>
+                <div class="stylist-specialties">
+                  <span class="specialty-tag">Color</span>
+                  <span class="specialty-tag">Highlights</span>
+                  <span class="specialty-tag">Creative</span>
+                </div>
+                <div class="stylist-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>15 yrs exp</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Next: Today 4PM</span>
+                  </div>
+                </div>
+                <a
+                  href="stylist-profile.html?id=maria-lopez"
+                  class="btn btn-stylist-profile"
+                >
+                  View Profile
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Stylist 4 -->
+            <article
+              class="stylist-card"
+              data-specialty="facial"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="stylist-card-image">
+                <img
+                  src="https://i.pinimg.com/1200x/af/81/40/af8140c23e95c734c640b03d40f1fc25.jpg"
+                  alt="David Reynolds"
+                />
+              </div>
+              <div class="stylist-card-body">
+                <div class="stylist-card-header">
+                  <h3 class="stylist-name">David Reynolds</h3>
+                  <div class="stylist-rating">
+                    <span class="rating-stars">★★★★★</span>
+                    <span class="rating-score">4.8</span>
+                    <span class="rating-count">(156)</span>
+                  </div>
+                </div>
+                <p class="stylist-title">Skin & Facial Specialist</p>
+                <p class="stylist-bio">
+                  Certified esthetician with a focus on anti-aging treatments
+                  and personalized skincare routines.
+                </p>
+                <div class="stylist-specialties">
+                  <span class="specialty-tag">Facial</span>
+                  <span class="specialty-tag">Anti-Aging</span>
+                  <span class="specialty-tag">Peels</span>
+                </div>
+                <div class="stylist-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>8 yrs exp</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Next: Wed 11AM</span>
+                  </div>
+                </div>
+                <a
+                  href="stylist-profile.html?id=david-reynolds"
+                  class="btn btn-stylist-profile"
+                >
+                  View Profile
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Stylist 5 -->
+            <article
+              class="stylist-card"
+              data-specialty="manicure"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="stylist-card-image">
+                <img
+                  src="https://i.pinimg.com/1200x/fc/22/a8/fc22a838dbad7251f1569bdbbe26143b.jpg"
+                  alt="Amina Hassan"
+                />
+              </div>
+              <div class="stylist-card-body">
+                <div class="stylist-card-header">
+                  <h3 class="stylist-name">Amina Hassan</h3>
+                  <div class="stylist-rating">
+                    <span class="rating-stars">★★★★★</span>
+                    <span class="rating-score">4.9</span>
+                    <span class="rating-count">(210)</span>
+                  </div>
+                </div>
+                <p class="stylist-title">Nail Artist & Manicurist</p>
+                <p class="stylist-bio">
+                  Precision nail art and long-lasting manicures. Amina's gel
+                  work lasts weeks without a single chip.
+                </p>
+                <div class="stylist-specialties">
+                  <span class="specialty-tag">Manicure</span>
+                  <span class="specialty-tag">Gel</span>
+                  <span class="specialty-tag">Nail Art</span>
+                </div>
+                <div class="stylist-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>7 yrs exp</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Next: Today 3PM</span>
+                  </div>
+                </div>
+                <a
+                  href="stylist-profile.html?id=amina-hassan"
+                  class="btn btn-stylist-profile"
+                >
+                  View Profile
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Stylist 6 -->
+            <article
+              class="stylist-card"
+              data-specialty="styling"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="stylist-card-image">
+                <img
+                  src="https://i.pinimg.com/1200x/c9/bc/e6/c9bce6753a72c19c7ab3177d21a737f8.jpg"
+                  alt="Zara Mensah"
+                />
+                <div class="stylist-card-badge stylist-card-badge--new">
+                  <span class="badge-text">Rising Star</span>
+                </div>
+              </div>
+              <div class="stylist-card-body">
+                <div class="stylist-card-header">
+                  <h3 class="stylist-name">Zara Mensah</h3>
+                  <div class="stylist-rating">
+                    <span class="rating-stars">★★★★★</span>
+                    <span class="rating-score">4.8</span>
+                    <span class="rating-count">(89)</span>
+                  </div>
+                </div>
+                <p class="stylist-title">Event & Bridal Stylist</p>
+                <p class="stylist-bio">
+                  Up-and-coming talent specializing in bridal and event styling.
+                  Zara's updos and braids are already booked months ahead.
+                </p>
+                <div class="stylist-specialties">
+                  <span class="specialty-tag">Styling</span>
+                  <span class="specialty-tag">Bridal</span>
+                  <span class="specialty-tag">Braids</span>
+                </div>
+                <div class="stylist-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>4 yrs exp</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Next: Fri 9AM</span>
+                  </div>
+                </div>
+                <a
+                  href="stylist-profile.html?id=zara-mensah"
+                  class="btn btn-stylist-profile"
+                >
+                  View Profile
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Stylist 7 -->
+            <article
+              class="stylist-card"
+              data-specialty="haircut"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="stylist-card-image">
+                <img
+                  src="https://i.pinimg.com/736x/87/6f/17/876f17717e949338a6518af501d9498c.jpg"
+                  alt="Brian Ochieng"
+                />
+              </div>
+              <div class="stylist-card-body">
+                <div class="stylist-card-header">
+                  <h3 class="stylist-name">Brian Ochieng</h3>
+                  <div class="stylist-rating">
+                    <span class="rating-stars">★★★★★</span>
+                    <span class="rating-score">4.7</span>
+                    <span class="rating-count">(134)</span>
+                  </div>
+                </div>
+                <p class="stylist-title">Men's Grooming Specialist</p>
+                <p class="stylist-bio">
+                  Classic cuts with a modern edge. Brian's attention to detail
+                  and relaxing chair-side manner keeps clients coming back.
+                </p>
+                <div class="stylist-specialties">
+                  <span class="specialty-tag">Haircuts</span>
+                  <span class="specialty-tag">Beard</span>
+                  <span class="specialty-tag">Hot Towel</span>
+                </div>
+                <div class="stylist-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>6 yrs exp</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Next: Thu 2PM</span>
+                  </div>
+                </div>
+                <a
+                  href="stylist-profile.html?id=brian-ochieng"
+                  class="btn btn-stylist-profile"
+                >
+                  View Profile
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Stylist 8 -->
+            <article
+              class="stylist-card"
+              data-specialty="color styling"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="stylist-card-image">
+                <img
+                  src="https://i.pinimg.com/736x/0b/64/84/0b6484744eb95d207a8434e6beb1740d.jpg"
+                  alt="Priya Sharma"
+                />
+              </div>
+              <div class="stylist-card-body">
+                <div class="stylist-card-header">
+                  <h3 class="stylist-name">Priya Sharma</h3>
+                  <div class="stylist-rating">
+                    <span class="rating-stars">★★★★★</span>
+                    <span class="rating-score">4.9</span>
+                    <span class="rating-count">(176)</span>
+                  </div>
+                </div>
+                <p class="stylist-title">Texture & Curl Specialist</p>
+                <p class="stylist-bio">
+                  Curly hair is her canvas. Priya's cutting techniques enhance
+                  natural texture while keeping curls healthy and defined.
+                </p>
+                <div class="stylist-specialties">
+                  <span class="specialty-tag">Curls</span>
+                  <span class="specialty-tag">Color</span>
+                  <span class="specialty-tag">Treatments</span>
+                </div>
+                <div class="stylist-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>9 yrs exp</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Next: Tue 1PM</span>
+                  </div>
+                </div>
+                <a
+                  href="stylist-profile.html?id=priya-sharma"
+                  class="btn btn-stylist-profile"
+                >
+                  View Profile
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Load More -->
+          <div
+            class="stylists-load-more"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+            <button type="button" class="btn btn-load-more">
+              Load More Stylists
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Book with Any Stylist CTA -->
+      <section class="stylists-cta">
+        <div class="stylists-cta-container">
+          <div class="stylists-cta-content" data-reveal="up">
+            <h2 class="stylists-cta-title">Not Sure Who to Choose?</h2>
+            <p class="stylists-cta-subtitle">
+              Let us match you with the perfect stylist based on your needs and
+              schedule.
+            </p>
+            <div class="stylists-cta-actions">
+              <a href="booking.html" class="btn btn-cta-primary"
+                >Book Any Available</a
+              >
+              <a href="contact.html" class="btn btn-cta-secondary">
+                <i class="fab fa-whatsapp"></i>
+                Ask on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand" data-reveal="up">
+            <a href="#" class="footer-logo">SalonBook</a>
+            <p class="footer-tagline">
+              A modern salon experience built around convenience, quality, and
+              customer loyalty.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links" data-reveal="up" data-reveal-delay="100">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact" data-reveal="up" data-reveal-delay="200">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <span>123 Kimathi Street, Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254712345678">+254 712 345 678</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@salonbook.co.ke">hello@salonbook.co.ke</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2026 SalonBook. All rights reserved.</p>
+          <div class="footer-payment">
+            <span>We accept:</span>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-stripe"></i>
+              <i class="fab fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="three/hero-scene.js"></script>
+    <script src="three/background-effects.js"></script>
+
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/stylists.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services — SalonBook</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="/" class="logo">SalonBook</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stylists.html">Stylists</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li>
+            <a href="contact.html" class="nav-cta"
+              >Contact <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="services-hero">
+        <div class="services-hero-container">
+          <div class="services-hero-content">
+            <h1 class="services-hero-title">
+              <span class="headline-line">Premium Beauty & Grooming</span>
+              <span class="headline-line">Services</span>
+            </h1>
+            <p class="services-hero-subtitle">
+              Find the perfect service for your next appointment.
+            </p>
+            <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-categories" id="categories">
+        <div class="service-categories-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Browse</span>
+            <h2 class="section-title">Service Categories</h2>
+            <p class="section-subtitle">
+              Find exactly what you are looking for
+            </p>
+          </div>
+          <div class="categories-grid" data-reveal="up" data-reveal-delay="200">
+            <a
+              href="#hair-services"
+              class="category-card"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="category-icon">
+                <i class="fas fa-cut"></i>
+              </div>
+              <h3 class="category-name">Hair</h3>
+              <span class="category-count">6 services</span>
+            </a>
+            <a
+              href="#beauty-services"
+              class="category-card"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="category-icon">
+                <i class="fas fa-spa"></i>
+              </div>
+              <h3 class="category-name">Beauty</h3>
+              <span class="category-count">5 services</span>
+            </a>
+            <a
+              href="#nail-services"
+              class="category-card"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="category-icon">
+                <i class="fas fa-hand-sparkles"></i>
+              </div>
+              <h3 class="category-name">Nails</h3>
+              <span class="category-count">4 services</span>
+            </a>
+            <a
+              href="#barber-services"
+              class="category-card"
+              data-reveal="up"
+              data-reveal-delay="400"
+            >
+              <div class="category-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <h3 class="category-name">Barber</h3>
+              <span class="category-count">4 services</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="all-services" id="all-services">
+        <div class="all-services-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Services</span>
+            <h2 class="section-title">Explore All Services</h2>
+            <p class="section-subtitle">
+              Professional beauty and grooming services designed to help you
+              look and feel your best.
+            </p>
+          </div>
+
+          <!-- Hair Services -->
+          <div
+            class="service-group"
+            id="hair-services"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            <h3 class="service-group-title">Hair Services</h3>
+            <div class="service-group-grid">
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="100"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/83/2b/64/832b6434d31f4dc9339f559db8a985b7.jpg"
+                    alt="Haircut"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Haircut</h4>
+                  <p class="all-service-desc">
+                    Precision cut tailored to your face shape and style.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 45 min</span
+                    >
+                    <span class="all-service-price">KES 1,500</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="haircut"
+                    data-price="KES 1,500"
+                    data-duration="45 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="200"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/21/c9/1c/21c91c7962dde37731b73d675a3a1ba5.jpg"
+                    alt="Hair Coloring"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Hair Coloring</h4>
+                  <p class="all-service-desc">
+                    Transform your look with vibrant, professional color
+                    treatments.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 90 min</span
+                    >
+                    <span class="all-service-price">KES 3,500</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="color"
+                    data-price="KES 3,500"
+                    data-duration="90 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="300"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/c0/b3/3c/c0b33cdaa318de3f3089cf83625d16d7.jpg"
+                    alt="Braiding"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Braiding</h4>
+                  <p class="all-service-desc">
+                    Protective styles from box braids to cornrows and twists.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 120 min</span
+                    >
+                    <span class="all-service-price">KES 2,500</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="braiding"
+                    data-price="KES 2,500"
+                    data-duration="120 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="400"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/4e/f4/a8/4ef4a87c4da99edefc6c7b97d173a5cc.jpg"
+                    alt="Hair Treatment"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Hair Treatment</h4>
+                  <p class="all-service-desc">
+                    Deep conditioning and restorative treatments for healthy
+                    hair.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 60 min</span
+                    >
+                    <span class="all-service-price">KES 2,000</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="treatment"
+                    data-price="KES 2,000"
+                    data-duration="60 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="500"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/736x/39/36/1a/39361af75ee27199e27cbfffe5a8ba6d.jpg"
+                    alt="Hair Extensions"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Hair Extensions</h4>
+                  <p class="all-service-desc">
+                    Length and volume with premium weave or clip-in extensions.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 150 min</span
+                    >
+                    <span class="all-service-price">KES 5,000</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="extensions"
+                    data-price="KES 5,000"
+                    data-duration="150 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="600"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/736x/07/0e/2b/070e2b50342970eb0a10f973463c75bb.jpg"
+                    alt="Silk Press"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Silk Press</h4>
+                  <p class="all-service-desc">
+                    Sleek, smooth finish with heat styling and shine.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 75 min</span
+                    >
+                    <span class="all-service-price">KES 2,000</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="silkpress"
+                    data-price="KES 2,000"
+                    data-duration="75 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Beauty Services -->
+          <div
+            class="service-group"
+            id="beauty-services"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            <h3 class="service-group-title">Beauty Services</h3>
+            <div class="service-group-grid">
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="100"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/736x/34/dd/8a/34dd8acfb13726e572253ccac1393b40.jpg"
+                    alt="Makeup"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Makeup</h4>
+                  <p class="all-service-desc">
+                    Flawless everyday or glam makeup application.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 60 min</span
+                    >
+                    <span class="all-service-price">KES 2,500</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="makeup"
+                    data-price="KES 2,500"
+                    data-duration="60 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="200"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/c2/a7/21/c2a721becb791de43aabf5ad8415b074.jpg"
+                    alt="Lashes"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Lashes</h4>
+                  <p class="all-service-desc">
+                    Classic, hybrid, or volume lash extensions.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 90 min</span
+                    >
+                    <span class="all-service-price">KES 3,000</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="lashes"
+                    data-price="KES 3,000"
+                    data-duration="90 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="300"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/5f/20/23/5f202332876c5655defd1f0f8a2c61f7.jpg"
+                    alt="Eyebrow Shaping"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Eyebrow Shaping</h4>
+                  <p class="all-service-desc">
+                    Precision shaping with threading, waxing, or tweezing.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 30 min</span
+                    >
+                    <span class="all-service-price">KES 800</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="eyebrow"
+                    data-price="KES 800"
+                    data-duration="30 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="400"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/53/2f/ae/532faec60d6513a2d57fe830aec01d99.jpg"
+                    alt="Bridal Makeup"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Bridal Makeup</h4>
+                  <p class="all-service-desc">
+                    Complete bridal beauty package for your special day.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 120 min</span
+                    >
+                    <span class="all-service-price">KES 8,000</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="bridal"
+                    data-price="KES 8,000"
+                    data-duration="120 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="500"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/65/0c/77/650c772dab06c24909adbfd5509db1b9.jpg"
+                    alt="Facials"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Facials</h4>
+                  <p class="all-service-desc">
+                    Deep cleansing and rejuvenating facial treatments.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 60 min</span
+                    >
+                    <span class="all-service-price">KES 2,500</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="facials"
+                    data-price="KES 2,500"
+                    data-duration="60 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Nail Services -->
+          <div
+            class="service-group"
+            id="nail-services"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            <h3 class="service-group-title">Nail Services</h3>
+            <div class="service-group-grid">
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="100"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/736x/a2/03/38/a2033830953fa43046dff44c681fec51.jpg"
+                    alt="Manicure"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Manicure</h4>
+                  <p class="all-service-desc">
+                    Classic nail care with shaping, cuticle care, and polish.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 45 min</span
+                    >
+                    <span class="all-service-price">KES 1,200</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="manicure"
+                    data-price="KES 1,200"
+                    data-duration="45 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="200"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/f5/a3/78/f5a3787cacfa07bcf75373fe476093e5.jpg"
+                    alt="Pedicure"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Pedicure</h4>
+                  <p class="all-service-desc">
+                    Relaxing foot care with soak, scrub, and polish.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 60 min</span
+                    >
+                    <span class="all-service-price">KES 1,500</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="pedicure"
+                    data-price="KES 1,500"
+                    data-duration="60 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="300"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/96/0e/a9/960ea9cf7655e80d9c3f3130389a1f5d.jpg"
+                    alt="Gel Polish"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Gel Polish</h4>
+                  <p class="all-service-desc">
+                    Long-lasting chip-free gel color application.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 45 min</span
+                    >
+                    <span class="all-service-price">KES 1,800</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="gel"
+                    data-price="KES 1,800"
+                    data-duration="45 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="400"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/736x/91/32/18/913218b497160da3a09c24ee8f409345.jpg"
+                    alt="Nail Art"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Nail Art</h4>
+                  <p class="all-service-desc">
+                    Creative designs and custom nail art for any occasion.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 60 min</span
+                    >
+                    <span class="all-service-price">KES 2,000</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="nailart"
+                    data-price="KES 2,000"
+                    data-duration="60 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Barber Services -->
+          <div
+            class="service-group"
+            id="barber-services"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            <h3 class="service-group-title">Barber Services</h3>
+            <div class="service-group-grid">
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="100"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/56/a9/f1/56a9f1980a94226e0c0413b2c92b2bff.jpg"
+                    alt="Barber Haircut"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Haircut</h4>
+                  <p class="all-service-desc">
+                    Sharp fades, tapers, and classic cuts for men.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 45 min</span
+                    >
+                    <span class="all-service-price">KES 1,000</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="barber-haircut"
+                    data-price="KES 1,000"
+                    data-duration="45 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="200"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/1200x/ff/20/93/ff2093d3d0f03b475545f77836c20789.jpg"
+                    alt="Luxury Shave"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Luxury Shave</h4>
+                  <p class="all-service-desc">
+                    Straight razor shave with hot towel treatment.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 30 min</span
+                    >
+                    <span class="all-service-price">KES 1,200</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="shave"
+                    data-price="KES 1,200"
+                    data-duration="30 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="300"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/736x/ab/79/5c/ab795c0e7a56d9a01c616ff10059e3bc.jpg"
+                    alt="Beard Grooming"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Beard Grooming</h4>
+                  <p class="all-service-desc">
+                    Shape, trim, and condition for a sharp beard.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 30 min</span
+                    >
+                    <span class="all-service-price">KES 800</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="beard"
+                    data-price="KES 800"
+                    data-duration="30 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="all-service-card"
+                data-reveal="up"
+                data-reveal-delay="400"
+              >
+                <div class="all-service-image">
+                  <img
+                    src="https://i.pinimg.com/736x/5d/d5/28/5dd5286e511c26701d6d06ef71915cca.jpg"
+                    alt="Hot Towel Treatment"
+                  />
+                </div>
+                <div class="all-service-body">
+                  <h4 class="all-service-name">Hot Towel Treatment</h4>
+                  <p class="all-service-desc">
+                    Relaxing steam treatment to soften skin and open pores.
+                  </p>
+                  <div class="all-service-meta">
+                    <span class="all-service-duration"
+                      ><i class="far fa-clock"></i> 20 min</span
+                    >
+                    <span class="all-service-price">KES 600</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="all-service-btn"
+                    data-service="hottowel"
+                    data-price="KES 600"
+                    data-duration="20 min"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services.html — Packages Section -->
+      <section class="service-packages" id="packages">
+        <div class="service-packages-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Packages</span>
+            <h2 class="section-title">Service Packages</h2>
+            <p class="section-subtitle">
+              Bundle and save on your favorite services
+            </p>
+          </div>
+          <div class="packages-grid" data-reveal="up" data-reveal-delay="200">
+            <article
+              class="package-card"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="package-header">
+                <h3 class="package-name">Glow Package</h3>
+                <p class="package-services">Hair + Nails</p>
+              </div>
+              <div class="package-body">
+                <ul class="package-includes">
+                  <li><i class="fas fa-check"></i> Precision Haircut</li>
+                  <li><i class="fas fa-check"></i> Classic Manicure</li>
+                  <li><i class="fas fa-check"></i> Complimentary drink</li>
+                </ul>
+                <div class="package-price">
+                  <span class="price-original">KES 5,200</span>
+                  <span class="price-current">KES 4,500</span>
+                </div>
+                <button
+                  type="button"
+                  class="package-btn"
+                  data-package="glow"
+                  data-price="KES 4,500"
+                >
+                  Book Package
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="package-card package-card--featured"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="package-badge">Best Value</div>
+              <div class="package-header">
+                <h3 class="package-name">Luxury Package</h3>
+                <p class="package-services">Hair + Makeup + Nails</p>
+              </div>
+              <div class="package-body">
+                <ul class="package-includes">
+                  <li><i class="fas fa-check"></i> Haircut & Styling</li>
+                  <li><i class="fas fa-check"></i> Full Makeup Application</li>
+                  <li><i class="fas fa-check"></i> Gel Manicure</li>
+                  <li><i class="fas fa-check"></i> Complimentary champagne</li>
+                </ul>
+                <div class="package-price">
+                  <span class="price-original">KES 10,500</span>
+                  <span class="price-current">KES 8,500</span>
+                </div>
+                <button
+                  type="button"
+                  class="package-btn"
+                  data-package="luxury"
+                  data-price="KES 8,500"
+                >
+                  Book Package
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="package-card"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="package-header">
+                <h3 class="package-name">Grooming Pack</h3>
+                <p class="package-services">Hair + Beard</p>
+              </div>
+              <div class="package-body">
+                <ul class="package-includes">
+                  <li><i class="fas fa-check"></i> Barber Haircut</li>
+                  <li><i class="fas fa-check"></i> Beard Grooming</li>
+                  <li><i class="fas fa-check"></i> Hot Towel Treatment</li>
+                </ul>
+                <div class="package-price">
+                  <span class="price-original">KES 2,600</span>
+                  <span class="price-current">KES 2,000</span>
+                </div>
+                <button
+                  type="button"
+                  class="package-btn"
+                  data-package="grooming"
+                  data-price="KES 2,000"
+                >
+                  Book Package
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- services.html — Why Choose Us Section -->
+      <section class="why-choose-us-services" id="why-us">
+        <div class="why-choose-us-services-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Why Us</span>
+            <h2 class="section-title">Why Clients Choose Us</h2>
+            <p class="section-subtitle">
+              Built around what matters most to you
+            </p>
+          </div>
+          <div
+            class="why-services-grid"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+            <article
+              class="why-services-card"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="why-services-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3 class="why-services-title">Expert Stylists</h3>
+              <p class="why-services-desc">
+                Our team is trained in the latest techniques and trends to
+                deliver results that exceed your expectations every single
+                visit.
+              </p>
+            </article>
+
+            <article
+              class="why-services-card"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="why-services-icon">
+                <i class="fas fa-pump-soap"></i>
+              </div>
+              <h3 class="why-services-title">Premium Products</h3>
+              <p class="why-services-desc">
+                We use only top-tier, professional-grade products that protect
+                your hair and skin while delivering salon-quality results.
+              </p>
+            </article>
+
+            <article
+              class="why-services-card"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="why-services-icon">
+                <i class="fas fa-mobile-screen"></i>
+              </div>
+              <h3 class="why-services-title">Easy Online Booking</h3>
+              <p class="why-services-desc">
+                Book your appointment in seconds through our website or
+                WhatsApp. No phone calls, no waiting, no hassle.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- services.html — Booking Process Section -->
+      <section class="booking-process" id="booking-process">
+        <div class="booking-process-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">How It Works</span>
+            <h2 class="section-title">Book in 4 Easy Steps</h2>
+            <p class="section-subtitle">
+              Your next appointment is just minutes away
+            </p>
+          </div>
+          <div
+            class="booking-process-flow"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+            <div class="process-step" data-reveal="up" data-reveal-delay="100">
+              <div class="process-step-number">01</div>
+              <div class="process-step-icon">
+                <i class="fas fa-scissors"></i>
+              </div>
+              <h3 class="process-step-title">Choose Service</h3>
+              <p class="process-step-desc">
+                Browse our menu and pick the perfect treatment for you.
+              </p>
+            </div>
+            <div
+              class="process-connector"
+              data-reveal="fade"
+              data-reveal-delay="250"
+            >
+              <i class="fas fa-arrow-down"></i>
+            </div>
+            <div class="process-step" data-reveal="up" data-reveal-delay="200">
+              <div class="process-step-number">02</div>
+              <div class="process-step-icon">
+                <i class="fas fa-user-check"></i>
+              </div>
+              <h3 class="process-step-title">Choose Stylist</h3>
+              <p class="process-step-desc">
+                Select your preferred expert or let us match you.
+              </p>
+            </div>
+            <div
+              class="process-connector"
+              data-reveal="fade"
+              data-reveal-delay="350"
+            >
+              <i class="fas fa-arrow-down"></i>
+            </div>
+            <div class="process-step" data-reveal="up" data-reveal-delay="300">
+              <div class="process-step-number">03</div>
+              <div class="process-step-icon">
+                <i class="fas fa-calendar-day"></i>
+              </div>
+              <h3 class="process-step-title">Select Date</h3>
+              <p class="process-step-desc">Pick a date that works. Mon–Sat</p>
+            </div>
+            <div
+              class="process-connector"
+              data-reveal="fade"
+              data-reveal-delay="450"
+            >
+              <i class="fas fa-arrow-down"></i>
+            </div>
+
+            <div class="process-step" data-reveal="up" data-reveal-delay="300">
+              <div class="process-step-number">04</div>
+              <div class="process-step-icon">
+                <i class="far fa-clock"></i>
+              </div>
+              <h3 class="process-step-title">Select Time</h3>
+              <p class="process-step-desc">
+                Pick a time that works. 9 AM to 5 PM.
+              </p>
+            </div>
+            <div
+              class="process-connector"
+              data-reveal="fade"
+              data-reveal-delay="450"
+            >
+              <i class="fas fa-arrow-down"></i>
+            </div>
+
+            <div class="process-step" data-reveal="up" data-reveal-delay="400">
+              <div class="process-step-number">05</div>
+              <div class="process-step-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <h3 class="process-step-title">Confirm Booking</h3>
+              <p class="process-step-desc">
+                We send your request via WhatsApp. Quick and easy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services.html — CTA Banner Section -->
+      <section class="services-cta-banner" id="cta">
+        <div class="services-cta-banner-container">
+          <div class="services-cta-banner-content" data-reveal="up">
+            <h2 class="services-cta-banner-title">
+              Ready For Your<br />Next Appointment?
+            </h2>
+            <p class="services-cta-banner-subtitle">
+              Choose your preferred service and<br />reserve your spot today.
+            </p>
+            <div class="services-cta-banner-actions">
+              <a href="booking.html" class="btn btn-final">Book Appointment</a>
+              <a
+                href="https://wa.me/254712345678"
+                target="_blank"
+                class="btn btn-final-whatsapp"
+              >
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand" data-reveal="up">
+            <a href="#" class="footer-logo">SalonBook</a>
+            <p class="footer-tagline">
+              A modern salon experience built around convenience, quality, and
+              customer loyalty.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links" data-reveal="up" data-reveal-delay="100">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact" data-reveal="up" data-reveal-delay="200">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <span>123 Kimathi Street, Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254712345678">+254 712 345 678</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@salonbook.co.ke">hello@salonbook.co.ke</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2026 SalonBook. All rights reserved.</p>
+          <div class="footer-payment">
+            <span>We accept:</span>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-stripe"></i>
+              <i class="fab fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="three/hero-scene.js"></script>
+    <script src="three/background-effects.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

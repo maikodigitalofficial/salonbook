@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylists-profile - SalonBook</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/stylist-profile.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="loaded">
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="/" class="logo">SalonBook</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stylists.html">Stylists</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li>
+            <a href="contact.html" class="nav-cta"
+              >Contact <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <a href="stylists.html#stylists" class="btn-back-to-stylists">
+        <i class="fas fa-arrow-left"></i>
+        Back to Stylists
+      </a>
+      <!-- Profile Hero -->
+      <section class="profile-hero">
+        <div class="profile-hero-container">
+          <div class="profile-hero-content">
+            <div class="profile-image-wrapper" data-reveal="up">
+              <img id="profile-image" src="" alt="" class="profile-image" />
+              <div
+                class="profile-badge"
+                id="profile-badge"
+                style="display: none"
+              >
+                <span class="badge-text" id="badge-text"></span>
+              </div>
+            </div>
+            <div class="profile-info" data-reveal="up" data-reveal-delay="100">
+              <div class="profile-header">
+                <h1 class="profile-name" id="profile-name"></h1>
+                <div class="profile-rating" id="profile-rating"></div>
+              </div>
+              <p class="profile-title" id="profile-title"></p>
+              <p class="profile-bio" id="profile-bio"></p>
+              <div class="profile-specialties" id="profile-specialties"></div>
+              <div class="profile-meta" id="profile-meta"></div>
+              <div class="profile-actions">
+                <a href="booking.html" class="btn btn-book-now"
+                  >Book Appointment</a
+                >
+                <a
+                  href="https://wa.me/254712345678"
+                  target="_blank"
+                  class="btn btn-whatsapp"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Message
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Bar -->
+      <section class="profile-stats" data-reveal="up" data-reveal-delay="200">
+        <div class="profile-stats-container">
+          <div class="profile-stat-item">
+            <span class="profile-stat-number" id="stat-experience"></span>
+            <span class="profile-stat-label">Years Experience</span>
+          </div>
+          <div class="profile-stat-divider"></div>
+          <div class="profile-stat-item">
+            <span class="profile-stat-number" id="stat-clients"></span>
+            <span class="profile-stat-label">Happy Clients</span>
+          </div>
+          <div class="profile-stat-divider"></div>
+          <div class="profile-stat-item">
+            <span class="profile-stat-number" id="stat-reviews"></span>
+            <span class="profile-stat-label">Reviews</span>
+          </div>
+          <div class="profile-stat-divider"></div>
+          <div class="profile-stat-item">
+            <span class="profile-stat-number" id="stat-rating"></span>
+            <span class="profile-stat-label">Average Rating</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="profile-services">
+        <div class="profile-services-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Services</span>
+            <h2 class="section-title">
+              What <span id="services-name"></span> Offers
+            </h2>
+          </div>
+          <div
+            class="profile-services-grid"
+            id="profile-services-grid"
+            data-reveal="up"
+            data-reveal-delay="100"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Portfolio / Gallery -->
+      <section class="profile-portfolio">
+        <div class="profile-portfolio-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Recent Work</h2>
+          </div>
+          <div
+            class="profile-portfolio-grid"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            <div class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=500&fit=crop"
+                alt="Work sample 1"
+              />
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=500&fit=crop"
+                alt="Work sample 2"
+              />
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=400&h=500&fit=crop"
+                alt="Work sample 3"
+              />
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400&h=500&fit=crop"
+                alt="Work sample 4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="profile-reviews">
+        <div class="profile-reviews-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Reviews</span>
+            <h2 class="section-title">What Clients Say</h2>
+          </div>
+          <div
+            class="profile-reviews-grid"
+            id="profile-reviews-grid"
+            data-reveal="up"
+            data-reveal-delay="100"
+          ></div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="profile-cta">
+        <div class="profile-cta-container">
+          <div class="profile-cta-content" data-reveal="up">
+            <h2 class="profile-cta-title">
+              Ready to Book with <span id="cta-name"></span>?
+            </h2>
+            <p class="profile-cta-subtitle">
+              Secure your spot. Walk out transformed.
+            </p>
+            <div class="profile-cta-actions">
+              <a href="booking.html" class="btn btn-cta-book">Book Now</a>
+              <a href="stylists.html#stylists" class="btn btn-cta-back"
+                >View All Stylists</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand" data-reveal="up">
+            <a href="#" class="footer-logo">SalonBook</a>
+            <p class="footer-tagline">
+              A modern salon experience built around convenience, quality, and
+              customer loyalty.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links" data-reveal="up" data-reveal-delay="100">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact" data-reveal="up" data-reveal-delay="200">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <span>123 Kimathi Street, Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254712345678">+254 712 345 678</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@salonbook.co.ke">hello@salonbook.co.ke</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2026 SalonBook. All rights reserved.</p>
+          <div class="footer-payment">
+            <span>We accept:</span>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-stripe"></i>
+              <i class="fab fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/stylist-profile.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

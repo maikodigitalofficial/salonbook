@@ -1,0 +1,314 @@
+/* ============================================
+   NAVIGATION.CSS — Header, Nav & Mobile Dropdown
+   ============================================ */
+
+/* ============================================
+   HEADER
+   ============================================ */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--header-height);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.site-header.is-scrolled {
+  background-color: rgba(15, 15, 15, 0.95);
+  box-shadow: 0 1px 0 var(--color-border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+
+.logo {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  z-index: 102;
+}
+
+.logo::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2C7.5 2 4 5.5 4 10c0 4.5 3.5 8 8 12 4.5-4 8-7.5 8-12 0-4.5-3.5-8-8-8z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E");
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ============================================
+   NAV LINKS (Desktop)
+   ============================================ */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--color-text-primary);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a.nav-cta::after {
+  display: none;
+}
+
+.nav-cta {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-bg) !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all var(--transition-fast) !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-cta i {
+  font-size: 12px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.nav-cta:hover i {
+  transform: translateX(3px);
+}
+
+.nav-cta:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   MOBILE MENU TOGGLE BUTTON
+   ============================================ */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  gap: 6px;
+  z-index: 102;
+  position: relative;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text-primary);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+/* Hamburger → X animation */
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ============================================
+   MOBILE DROPDOWN MENU
+   ============================================ */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: calc(var(--header-height) + var(--space-xl)) var(--space-xl)
+      var(--space-xl);
+    z-index: 101;
+
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition:
+      opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Open state */
+  .nav-links.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* Individual link animation */
+  .nav-links li {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .nav-links.is-open li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered entrance */
+  .nav-links.is-open li:nth-child(1) {
+    transition-delay: 0.08s;
+  }
+  .nav-links.is-open li:nth-child(2) {
+    transition-delay: 0.14s;
+  }
+  .nav-links.is-open li:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  .nav-links.is-open li:nth-child(4) {
+    transition-delay: 0.26s;
+  }
+  .nav-links.is-open li:nth-child(5) {
+    transition-delay: 0.32s;
+  }
+  .nav-links.is-open li:nth-child(6) {
+    transition-delay: 0.38s;
+  }
+  .nav-links.is-open li:nth-child(7) {
+    transition-delay: 0.44s;
+  }
+
+  /* Exit stagger (reverse) */
+  .nav-links li:nth-child(1) {
+    transition-delay: 0.3s;
+  }
+  .nav-links li:nth-child(2) {
+    transition-delay: 0.25s;
+  }
+  .nav-links li:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  .nav-links li:nth-child(4) {
+    transition-delay: 0.15s;
+  }
+  .nav-links li:nth-child(5) {
+    transition-delay: 0.1s;
+  }
+  .nav-links li:nth-child(6) {
+    transition-delay: 0.05s;
+  }
+  .nav-links li:nth-child(7) {
+    transition-delay: 0s;
+  }
+
+  .nav-links a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    padding: var(--space-md) 0;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .nav-links a:hover {
+    color: var(--color-accent);
+  }
+
+  .nav-cta {
+    margin-top: var(--space-md);
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================================
+   BODY LOCK WHEN MENU OPEN
+   ============================================ */
+body.menu-open {
+  overflow: hidden;
+}

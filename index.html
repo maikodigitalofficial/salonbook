@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SalonBook — Premium Salon Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/booking.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="loaded">
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#" class="logo">SalonBook</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stylists.html">Stylists</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li>
+            <a href="contact.html" class="nav-cta"
+              >Contact <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-headline">
+                <span class="headline-line">More Bookings.</span>
+                <span class="headline-line">More Repeat Clients.</span>
+                <span class="headline-line">Less Empty Chairs.</span>
+              </h1>
+              <p class="hero-subhead">
+                A modern salon experience built around convenience, quality, and
+                customer loyalty.
+              </p>
+              <div class="hero-actions">
+                <a href="booking.html" class="btn btn-primary"
+                  >Book Appointment</a
+                >
+                <a href="services.html" class="btn btn-secondary"
+                  >View Services</a
+                >
+              </div>
+              <div class="hero-social" data-reveal="up" data-reveal-delay="200">
+                <div class="hero-avatars">
+                  <img
+                    src="https://i.pinimg.com/736x/83/b3/69/83b36988547b4e469c51b1bd72244a81.jpg"
+                    alt="Client"
+                  />
+                  <img
+                    src="https://i.pinimg.com/736x/4e/d8/79/4ed87956df69fd16626e29c9de71cab3.jpg"
+                    alt="Client"
+                  />
+                  <img
+                    src="https://i.pinimg.com/1200x/8c/f1/86/8cf18699f1faa350fa290605e06b6222.jpg"
+                    alt="Client"
+                  />
+                </div>
+                <div class="hero-stats">
+                  <span class="hero-stats-number">12.5K +</span>
+                  <span class="hero-stats-label">Satisfied Clients</span>
+                </div>
+                <div class="hero-rating">
+                  <div class="hero-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span
+                    ><span>★</span>
+                  </div>
+                  <span class="hero-rating-text"
+                    ><strong>4.9</strong> (12,202) Excellent</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img
+                src="https://i.pinimg.com/736x/fd/67/dc/fd67dcc7dfb892cdea88f50a4e8015ba.jpg"
+                alt="Luxury salon interior with modern styling stations"
+                class="hero-image"
+              />
+            </div>
+            <div class="hero-badge">
+              <img
+                src="https://i.pinimg.com/736x/74/9c/c0/749cc0211965e31ae885cabd3e73b9e6.jpg"
+                alt="Salon styling in progress"
+              />
+            </div>
+            <div class="hero-dot"></div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="booking-bar"
+        id="booking"
+        data-reveal="up"
+        data-reveal-delay="100"
+      >
+        <div class="booking-bar-container">
+          <div class="booking-bar-inner">
+            <div
+              class="booking-field"
+              data-reveal="fade"
+              data-reveal-delay="200"
+            >
+              <label class="booking-label">Service</label>
+              <select class="booking-select">
+                <option value="" disabled selected>Select service</option>
+                <option value="haircut">Haircut</option>
+                <option value="color">Hair Color</option>
+                <option value="styling">Styling</option>
+                <option value="facial">Facial</option>
+                <option value="manicure">Manicure</option>
+              </select>
+            </div>
+            <div
+              class="booking-divider"
+              data-reveal="fade"
+              data-reveal-delay="250"
+            ></div>
+            <div
+              class="booking-field"
+              data-reveal="fade"
+              data-reveal-delay="300"
+            >
+              <label class="booking-label">Stylist</label>
+              <select class="booking-select">
+                <option value="" disabled selected>Select stylist</option>
+                <option value="any">Any Available</option>
+                <option value="sarah">Sarah M.</option>
+                <option value="james">James K.</option>
+                <option value="maria">Maria L.</option>
+                <option value="david">David R.</option>
+              </select>
+            </div>
+            <div
+              class="booking-divider"
+              data-reveal="fade"
+              data-reveal-delay="350"
+            ></div>
+            <div
+              class="booking-field"
+              data-reveal="fade"
+              data-reveal-delay="400"
+            >
+              <label class="booking-label">Date</label>
+              <input type="date" class="booking-input" />
+            </div>
+            <div
+              class="booking-divider"
+              data-reveal="fade"
+              data-reveal-delay="450"
+            ></div>
+            <div
+              class="booking-field"
+              data-reveal="fade"
+              data-reveal-delay="500"
+            >
+              <label class="booking-label">Time</label>
+              <select class="booking-select">
+                <option value="" disabled selected>Select time</option>
+                <option value="9:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="16:00">4:00 PM</option>
+                <option value="17:00">5:00 PM</option>
+              </select>
+            </div>
+            <button
+              type="button"
+              class="booking-btn"
+              data-reveal="scale"
+              data-reveal-delay="600"
+            >
+              Book
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-services" id="services">
+        <div class="featured-services-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Our Services</span>
+            <h2 class="section-title">Featured Services</h2>
+            <p class="section-subtitle">
+              Premium treatments tailored to your style
+            </p>
+          </div>
+          <div class="services-grid" data-reveal="up" data-reveal-delay="200">
+            <article
+              class="service-card"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="service-card-image">
+                <img
+                  src="https://i.pinimg.com/1200x/83/2b/64/832b6434d31f4dc9339f559db8a985b7.jpg"
+                  alt="Precision Haircut"
+                />
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-name">Precision Haircut</h3>
+                <div class="service-card-meta">
+                  <span class="service-card-price">$45</span>
+                  <span class="service-card-duration"
+                    ><i class="far fa-clock"></i> 45 min</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="service-card-btn"
+                  data-service="haircut"
+                  data-price="$45"
+                  data-duration="45 min"
+                >
+                  Book Now
+                </button>
+              </div>
+            </article>
+            <article
+              class="service-card"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="service-card-image">
+                <img
+                  src="https://i.pinimg.com/1200x/21/c9/1c/21c91c7962dde37731b73d675a3a1ba5.jpg"
+                  alt="Hair Coloring"
+                />
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-name">Hair Coloring</h3>
+                <div class="service-card-meta">
+                  <span class="service-card-price">$85</span>
+                  <span class="service-card-duration"
+                    ><i class="far fa-clock"></i> 90 min</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="service-card-btn"
+                  data-service="color"
+                  data-price="$85"
+                  data-duration="90 min"
+                >
+                  Book Now
+                </button>
+              </div>
+            </article>
+            <article
+              class="service-card"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="service-card-image">
+                <img
+                  src="https://i.pinimg.com/736x/cc/8d/e7/cc8de7976b598cf956b261678b5b560d.jpg"
+                  alt="Hair Styling"
+                />
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-name">Hair Styling</h3>
+                <div class="service-card-meta">
+                  <span class="service-card-price">$55</span>
+                  <span class="service-card-duration"
+                    ><i class="far fa-clock"></i> 60 min</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="service-card-btn"
+                  data-service="styling"
+                  data-price="$55"
+                  data-duration="60 min"
+                >
+                  Book Now
+                </button>
+              </div>
+            </article>
+            <article
+              class="service-card"
+              data-reveal="up"
+              data-reveal-delay="400"
+            >
+              <div class="service-card-image">
+                <img
+                  src="https://i.pinimg.com/1200x/4f/2f/89/4f2f8978551fe662614e57257350312e.jpg"
+                  alt="Facial Treatment"
+                />
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-name">Facial Treatment</h3>
+                <div class="service-card-meta">
+                  <span class="service-card-price">$70</span>
+                  <span class="service-card-duration"
+                    ><i class="far fa-clock"></i> 60 min</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="service-card-btn"
+                  data-service="facial"
+                  data-price="$70"
+                  data-duration="60 min"
+                >
+                  Book Now
+                </button>
+              </div>
+            </article>
+            <article
+              class="service-card"
+              data-reveal="up"
+              data-reveal-delay="500"
+            >
+              <div class="service-card-image">
+                <img
+                  src="https://i.pinimg.com/736x/a2/03/38/a2033830953fa43046dff44c681fec51.jpg"
+                  alt="Manicure"
+                />
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-name">Manicure</h3>
+                <div class="service-card-meta">
+                  <span class="service-card-price">$35</span>
+                  <span class="service-card-duration"
+                    ><i class="far fa-clock"></i> 30 min</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="service-card-btn"
+                  data-service="manicure"
+                  data-price="$35"
+                  data-duration="30 min"
+                >
+                  Book Now
+                </button>
+              </div>
+            </article>
+            <article
+              class="service-card"
+              data-reveal="up"
+              data-reveal-delay="600"
+            >
+              <div class="service-card-image">
+                <img
+                  src="https://i.pinimg.com/736x/ab/79/5c/ab795c0e7a56d9a01c616ff10059e3bc.jpg"
+                  alt="Beard Grooming"
+                />
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-name">Beard Grooming</h3>
+                <div class="service-card-meta">
+                  <span class="service-card-price">$30</span>
+                  <span class="service-card-duration"
+                    ><i class="far fa-clock"></i> 25 min</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="service-card-btn"
+                  data-service="beard"
+                  data-price="$30"
+                  data-duration="25 min"
+                >
+                  Book Now
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-choose-us" id="about">
+        <div class="why-choose-us-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Why Us</span>
+            <h2 class="section-title">Why Clients Choose Us</h2>
+            <p class="section-subtitle">
+              Built around what matters most to you
+            </p>
+          </div>
+          <div class="why-grid" data-reveal="up" data-reveal-delay="200">
+            <article class="why-card" data-reveal="up" data-reveal-delay="100">
+              <div class="why-icon">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h3 class="why-title">Convenience</h3>
+              <p class="why-desc">
+                Book anytime. Schedule your appointment 24/7 through our website
+                or WhatsApp. No phone calls, no waiting.
+              </p>
+            </article>
+            <article class="why-card" data-reveal="up" data-reveal-delay="200">
+              <div class="why-icon">
+                <i class="fas fa-gem"></i>
+              </div>
+              <h3 class="why-title">Expertise</h3>
+              <p class="why-desc">
+                Professional stylists. Our team is trained in the latest
+                techniques to deliver results that exceed expectations.
+              </p>
+            </article>
+            <article class="why-card" data-reveal="up" data-reveal-delay="300">
+              <div class="why-icon">
+                <i class="fas fa-gift"></i>
+              </div>
+              <h3 class="why-title">Loyalty Rewards</h3>
+              <p class="why-desc">
+                Membership benefits. Earn points with every visit, unlock
+                exclusive perks, and enjoy priority booking.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="membership" id="membership">
+        <div class="membership-container">
+          <div class="membership-content" data-reveal="left">
+            <div class="section-header membership-header">
+              <span class="section-label">Membership</span>
+              <h2 class="section-title">Join the Inner Circle</h2>
+              <p class="section-subtitle">
+                Unlock premium perks designed for clients who expect more. Your
+                loyalty deserves to be rewarded.
+              </p>
+            </div>
+            <ul class="membership-benefits">
+              <li
+                class="membership-benefit"
+                data-reveal="up"
+                data-reveal-delay="100"
+              >
+                <div class="benefit-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="benefit-text">
+                  <h4>Priority Booking</h4>
+                  <p>
+                    Skip the wait. Get first access to peak hours and
+                    last-minute slots.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="membership-benefit"
+                data-reveal="up"
+                data-reveal-delay="200"
+              >
+                <div class="benefit-icon">
+                  <i class="fas fa-tag"></i>
+                </div>
+                <div class="benefit-text">
+                  <h4>Member Discounts</h4>
+                  <p>
+                    Save 15% on every service. Stack with seasonal offers for up
+                    to 30% off.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="membership-benefit"
+                data-reveal="up"
+                data-reveal-delay="300"
+              >
+                <div class="benefit-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="benefit-text">
+                  <h4>Exclusive Offers</h4>
+                  <p>
+                    Members-only treatments, early product drops, and private
+                    events.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="membership-benefit"
+                data-reveal="up"
+                data-reveal-delay="400"
+              >
+                <div class="benefit-icon">
+                  <i class="fas fa-cake-candles"></i>
+                </div>
+                <div class="benefit-text">
+                  <h4>Birthday Rewards</h4>
+                  <p>
+                    Free birthday treatment + complimentary champagne on your
+                    special day.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div
+              class="membership-cta"
+              data-reveal="up"
+              data-reveal-delay="500"
+            >
+              <a href="membership.html" class="btn btn-membership"
+                >Become a Member</a
+              >
+              <p class="membership-note">No commitment. Cancel anytime.</p>
+            </div>
+          </div>
+          <div
+            class="membership-visual"
+            data-reveal="right"
+            data-reveal-delay="200"
+          >
+            <div class="membership-image-wrapper">
+              <img
+                src="https://i.pinimg.com/736x/19/cb/ed/19cbedbcb0abe3de1398b82e8a675532.jpg"
+                alt="Premium salon membership experience"
+                class="membership-image"
+              />
+            </div>
+            <div class="membership-badge">
+              <span class="membership-badge-price">$29</span>
+              <span class="membership-badge-period">/month</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="referral" id="referrals">
+        <div class="referral-container">
+          <div class="referral-header" data-reveal="up">
+            <span class="section-label">Refer & Earn</span>
+            <h2 class="section-title">Invite Friends.<br />Earn Rewards.</h2>
+            <p class="section-subtitle">
+              Share your love for great hair. Both you and your friend get
+              rewarded.
+            </p>
+          </div>
+          <div class="referral-flow" data-reveal="up" data-reveal-delay="200">
+            <div class="referral-step" data-reveal="up" data-reveal-delay="100">
+              <div class="referral-step-number">01</div>
+              <div class="referral-step-icon">
+                <i class="fas fa-share-nodes"></i>
+              </div>
+              <h3 class="referral-step-title">Share</h3>
+              <p class="referral-step-desc">
+                Send your unique referral link to friends via WhatsApp, SMS, or
+                social.
+              </p>
+            </div>
+            <div
+              class="referral-connector"
+              data-reveal="fade"
+              data-reveal-delay="250"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="referral-step" data-reveal="up" data-reveal-delay="200">
+              <div class="referral-step-number">02</div>
+              <div class="referral-step-icon">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h3 class="referral-step-title">Friend Books</h3>
+              <p class="referral-step-desc">
+                They book their first appointment using your link. No code
+                needed.
+              </p>
+            </div>
+            <div
+              class="referral-connector"
+              data-reveal="fade"
+              data-reveal-delay="350"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="referral-step" data-reveal="up" data-reveal-delay="300">
+              <div class="referral-step-number">03</div>
+              <div class="referral-step-icon">
+                <i class="fas fa-gift"></i>
+              </div>
+              <h3 class="referral-step-title">Get Rewarded</h3>
+              <p class="referral-step-desc">
+                You both get $20 credit. Use it on any service, anytime.
+              </p>
+            </div>
+          </div>
+          <div class="referral-cta" data-reveal="up" data-reveal-delay="400">
+            <button
+              type="button"
+              class="btn btn-referral"
+              onclick="copyReferralLink()"
+            >
+              <i class="fas fa-link"></i>
+              Copy Referral Link
+            </button>
+            <p class="referral-note">
+              Share now. Rewards apply instantly after their first visit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="transformations" id="transformations">
+        <div class="transformations-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Results</span>
+            <h2 class="section-title">Transformations</h2>
+            <p class="section-subtitle">
+              Real clients. Real results. See the difference our stylists make.
+            </p>
+          </div>
+          <div class="transformations-grid">
+            <div
+              class="transformation-card"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="comparison-slider" data-slider>
+                <div class="comparison-image comparison-before">
+                  <img src="/assets/images/before.png" alt="Before haircut" />
+                  <span class="comparison-label">Before</span>
+                </div>
+                <div class="comparison-image comparison-after">
+                  <img src="/assets/images/after.png" alt="After haircut" />
+                  <span class="comparison-label">After</span>
+                </div>
+                <div class="comparison-handle" data-slider-handle>
+                  <div class="comparison-handle-line"></div>
+                  <div class="comparison-handle-button">
+                    <i class="fas fa-arrows-left-right"></i>
+                  </div>
+                  <div class="comparison-handle-line"></div>
+                </div>
+              </div>
+              <div class="transformation-info">
+                <h3 class="transformation-title">Precision Cut & Style</h3>
+                <p class="transformation-stylist">by Sarah M.</p>
+              </div>
+            </div>
+            <div
+              class="transformation-card"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="comparison-slider" data-slider>
+                <div class="comparison-image comparison-before">
+                  <img src="/assets/images/before.png" alt="Before coloring" />
+                  <span class="comparison-label">Before</span>
+                </div>
+                <div class="comparison-image comparison-after">
+                  <img src="/assets/images/after.png" alt="After coloring" />
+                  <span class="comparison-label">After</span>
+                </div>
+                <div class="comparison-handle" data-slider-handle>
+                  <div class="comparison-handle-line"></div>
+                  <div class="comparison-handle-button">
+                    <i class="fas fa-arrows-left-right"></i>
+                  </div>
+                  <div class="comparison-handle-line"></div>
+                </div>
+              </div>
+              <div class="transformation-info">
+                <h3 class="transformation-title">Full Color Transformation</h3>
+                <p class="transformation-stylist">by Maria L.</p>
+              </div>
+            </div>
+            <div
+              class="transformation-card"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="comparison-slider" data-slider>
+                <div class="comparison-image comparison-before">
+                  <img src="/assets/images/before.png" alt="Before treatment" />
+                  <span class="comparison-label">Before</span>
+                </div>
+                <div class="comparison-image comparison-after">
+                  <img src="/assets/images/after.png" alt="After treatment" />
+                  <span class="comparison-label">After</span>
+                </div>
+                <div class="comparison-handle" data-slider-handle>
+                  <div class="comparison-handle-line"></div>
+                  <div class="comparison-handle-button">
+                    <i class="fas fa-arrows-left-right"></i>
+                  </div>
+                  <div class="comparison-handle-line"></div>
+                </div>
+              </div>
+              <div class="transformation-info">
+                <h3 class="transformation-title">Keratin Treatment</h3>
+                <p class="transformation-stylist">by James K.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Testimonials</span>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">
+              Real reviews from real people. Verified by Google.
+            </p>
+          </div>
+          <div class="testimonials-grid">
+            <article
+              class="testimonial-card"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face"
+                    alt="Amanda K."
+                  />
+                </div>
+                <div class="testimonial-meta">
+                  <div class="testimonial-name-row">
+                    <span class="testimonial-name">Amanda K.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="testimonial-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial-rating-row">
+                    <div class="stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="testimonial-date">2 weeks ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <p>
+                  "Absolutely the best salon experience I've ever had. Sarah
+                  understood exactly what I wanted and delivered beyond my
+                  expectations. My hair has never looked better. Already booked
+                  my next appointment!"
+                </p>
+              </div>
+              <div class="testimonial-service">
+                <span>Service:</span> Precision Haircut
+              </div>
+            </article>
+            <article
+              class="testimonial-card"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+                    alt="Marcus T."
+                  />
+                </div>
+                <div class="testimonial-meta">
+                  <div class="testimonial-name-row">
+                    <span class="testimonial-name">Marcus T.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="testimonial-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial-rating-row">
+                    <div class="stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="testimonial-date">1 month ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <p>
+                  "The membership is worth every penny. Priority booking means I
+                  never have to wait, and the 15% discount adds up fast. James
+                  is my go-to stylist — he knows exactly how to handle my hair
+                  type."
+                </p>
+              </div>
+              <div class="testimonial-service">
+                <span>Service:</span> Membership + Styling
+              </div>
+            </article>
+            <article
+              class="testimonial-card"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
+                    alt="Priya S."
+                  />
+                </div>
+                <div class="testimonial-meta">
+                  <div class="testimonial-name-row">
+                    <span class="testimonial-name">Priya S.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="testimonial-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial-rating-row">
+                    <div class="stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="testimonial-date">3 weeks ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <p>
+                  "Maria transformed my hair color completely. I was nervous
+                  about going blonde but she walked me through every step. The
+                  booking via WhatsApp was so convenient. Best salon in Nairobi,
+                  hands down."
+                </p>
+              </div>
+              <div class="testimonial-service">
+                <span>Service:</span> Hair Coloring
+              </div>
+            </article>
+          </div>
+          <div
+            class="testimonials-footer"
+            data-reveal="up"
+            data-reveal-delay="400"
+          >
+            <a href="reviews.html" class="btn btn-more-reviews">More Reviews</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="contact">
+        <div class="final-cta-container">
+          <div class="final-cta-content" data-reveal="up">
+            <h2 class="final-cta-title">
+              Ready For Your<br />Next Appointment?
+            </h2>
+            <p class="final-cta-subtitle">
+              Book in seconds. Walk out transformed.
+            </p>
+            <div class="final-cta-actions">
+              <a href="booking.html" class="btn btn-final">Book Appointment</a>
+              <a
+                href="https://wa.me/1234567890"
+                target="_blank"
+                class="btn btn-final-whatsapp"
+              >
+                <i class="fab fa-whatsapp"></i>
+                Book on WhatsApp
+              </a>
+            </div>
+            <p class="final-cta-note">
+              No credit card required. Free cancellation.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand" data-reveal="up">
+            <a href="#" class="footer-logo">SalonBook</a>
+            <p class="footer-tagline">
+              A modern salon experience built around convenience, quality, and
+              customer loyalty.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links" data-reveal="up" data-reveal-delay="100">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact" data-reveal="up" data-reveal-delay="200">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <span>123 Kimathi Street, Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254712345678">+254 712 345 678</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@salonbook.co.ke">hello@salonbook.co.ke</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2026 SalonBook. All rights reserved.</p>
+          <div class="footer-payment">
+            <span>We accept:</span>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-stripe"></i>
+              <i class="fab fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="three/hero-scene.js"></script>
+    <script src="three/background-effects.js"></script>
+
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/referrals.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

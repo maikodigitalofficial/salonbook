@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Booking — SalonBook</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/booking.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="/" class="logo">SalonBook</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stylists.html">Stylists</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li>
+            <a href="contact.html" class="nav-cta"
+              >Contact <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- booking.html — Hero Section -->
+      <section class="booking-hero">
+        <div class="booking-hero-container">
+          <div class="booking-hero-content" data-reveal="up">
+            <h1 class="booking-hero-title">
+              <span class="headline-line">Book Your</span>
+              <span class="headline-line">Appointment</span>
+            </h1>
+            <p class="booking-hero-subtitle">
+              Choose your service, select a time, and reserve your spot in
+              minutes.
+            </p>
+            <div class="booking-hero-trust">
+              <span class="trust-item"
+                ><i class="fas fa-check"></i> Instant Confirmation</span
+              >
+              <span class="trust-item"
+                ><i class="fas fa-check"></i> Secure Booking</span
+              >
+              <span class="trust-item"
+                ><i class="fas fa-check"></i> Flexible Scheduling</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 2 — BOOKING FORM & SUMMARY WRAPPER
+        ============================================ -->
+      <section class="booking-section" id="bookingSection">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Reservation</span>
+            <h2 class="section-title">Book Your Visit</h2>
+            <p class="section-subtitle">
+              Follow the steps below to schedule your appointment in under 2
+              minutes.
+            </p>
+          </div>
+
+          <!-- Flex wrapper for form + summary -->
+          <div class="booking-layout">
+            <!-- Left: Booking Form -->
+            <div class="booking-form-wrapper">
+              <form
+                class="booking-form"
+                id="bookingForm"
+                novalidate
+                data-reveal="up"
+                data-reveal-delay="150"
+              >
+                <!-- Progress Steps -->
+                <div
+                  class="booking-steps"
+                  id="bookingSteps"
+                  data-reveal="fade"
+                  data-reveal-delay="50"
+                >
+                  <div
+                    class="step-indicator active"
+                    data-step="1"
+                    id="stepIndicator1"
+                  >
+                    <span class="step-number">1</span>
+                    <span class="step-label">Service</span>
+                  </div>
+                  <div class="step-line"></div>
+                  <div class="step-indicator" data-step="2" id="stepIndicator2">
+                    <span class="step-number">2</span>
+                    <span class="step-label">Stylist</span>
+                  </div>
+                  <div class="step-line"></div>
+                  <div class="step-indicator" data-step="3" id="stepIndicator3">
+                    <span class="step-number">3</span>
+                    <span class="step-label">Date</span>
+                  </div>
+                  <div class="step-line"></div>
+                  <div class="step-indicator" data-step="4" id="stepIndicator4">
+                    <span class="step-number">4</span>
+                    <span class="step-label">Time</span>
+                  </div>
+                  <div class="step-line"></div>
+                  <div class="step-indicator" data-step="5" id="stepIndicator5">
+                    <span class="step-number">5</span>
+                    <span class="step-label">Details</span>
+                  </div>
+                </div>
+
+                <!-- Form Grid -->
+                <div class="booking-grid" id="bookingGrid">
+                  <!-- Step 1: Service -->
+                  <div
+                    class="form-group"
+                    id="formGroupService"
+                    data-reveal="up"
+                    data-reveal-delay="100"
+                  >
+                    <label for="bookingService" class="form-label">
+                      <span class="form-step-badge">Step 1</span>
+                      Choose Service
+                    </label>
+                    <div class="form-select-wrapper">
+                      <select
+                        id="bookingService"
+                        name="service"
+                        class="form-select"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Select a service
+                        </option>
+                        <option value="Haircut">Haircut</option>
+                        <option value="Hair Coloring">Hair Coloring</option>
+                        <option value="Braiding">Braiding</option>
+                        <option value="Hair Treatment">Hair Treatment</option>
+                        <option value="Makeup">Makeup</option>
+                        <option value="Lashes">Lashes</option>
+                        <option value="Manicure">Manicure</option>
+                        <option value="Pedicure">Pedicure</option>
+                        <option value="Luxury Shave">Luxury Shave</option>
+                        <option value="Beard Grooming">Beard Grooming</option>
+                      </select>
+                      <i class="fas fa-chevron-down form-select-icon"></i>
+                    </div>
+                    <span class="form-error" id="serviceError"
+                      >Please select a service</span
+                    >
+                  </div>
+
+                  <!-- Step 2: Stylist -->
+                  <div
+                    class="form-group"
+                    id="formGroupStylist"
+                    data-reveal="up"
+                    data-reveal-delay="100"
+                  >
+                    <label for="bookingStylist" class="form-label">
+                      <span class="form-step-badge">Step 2</span>
+                      Choose Stylist
+                    </label>
+                    <div class="form-select-wrapper">
+                      <select
+                        id="bookingStylist"
+                        name="stylist"
+                        class="form-select"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Select a stylist
+                        </option>
+                        <option value="Sarah">Sarah</option>
+                        <option value="James">James</option>
+                        <option value="Amina">Amina</option>
+                        <option value="Kevin">Kevin</option>
+                      </select>
+                      <i class="fas fa-chevron-down form-select-icon"></i>
+                    </div>
+                    <span class="form-error" id="stylistError"
+                      >Please select a stylist</span
+                    >
+                  </div>
+
+                  <!-- Step 3: Date -->
+                  <div
+                    class="form-group"
+                    id="formGroupDate"
+                    data-reveal="up"
+                    data-reveal-delay="100"
+                  >
+                    <label for="bookingDate" class="form-label">
+                      <span class="form-step-badge">Step 3</span>
+                      Choose Date
+                    </label>
+                    <div class="form-input-wrapper">
+                      <input
+                        type="date"
+                        id="bookingDate"
+                        name="date"
+                        class="form-input"
+                        required
+                      />
+                      <i class="fas fa-calendar form-input-icon"></i>
+                    </div>
+                    <span class="form-error" id="dateError"
+                      >Please select a date</span
+                    >
+                  </div>
+
+                  <!-- Step 4: Time -->
+                  <div
+                    class="form-group"
+                    id="formGroupTime"
+                    data-reveal="up"
+                    data-reveal-delay="100"
+                  >
+                    <label class="form-label">
+                      <span class="form-step-badge">Step 4</span>
+                      Choose Time
+                    </label>
+                    <div class="time-slots" id="timeSlots">
+                      <label class="time-slot">
+                        <input
+                          type="radio"
+                          name="time"
+                          value="9:00 AM"
+                          class="time-slot-input"
+                          required
+                        />
+                        <span>9:00 AM</span>
+                      </label>
+                      <label class="time-slot">
+                        <input
+                          type="radio"
+                          name="time"
+                          value="10:00 AM"
+                          class="time-slot-input"
+                        />
+                        <span>10:00 AM</span>
+                      </label>
+                      <label class="time-slot">
+                        <input
+                          type="radio"
+                          name="time"
+                          value="11:00 AM"
+                          class="time-slot-input"
+                        />
+                        <span>11:00 AM</span>
+                      </label>
+                      <label class="time-slot">
+                        <input
+                          type="radio"
+                          name="time"
+                          value="1:00 PM"
+                          class="time-slot-input"
+                        />
+                        <span>1:00 PM</span>
+                      </label>
+                      <label class="time-slot">
+                        <input
+                          type="radio"
+                          name="time"
+                          value="2:00 PM"
+                          class="time-slot-input"
+                        />
+                        <span>2:00 PM</span>
+                      </label>
+                      <label class="time-slot">
+                        <input
+                          type="radio"
+                          name="time"
+                          value="4:00 PM"
+                          class="time-slot-input"
+                        />
+                        <span>4:00 PM</span>
+                      </label>
+                    </div>
+                    <span class="form-error" id="timeError"
+                      >Please select a time</span
+                    >
+                  </div>
+
+                  <!-- Step 5: Customer Details -->
+                  <div
+                    class="form-group form-group--wide"
+                    id="formGroupDetails"
+                    data-reveal="up"
+                    data-reveal-delay="100"
+                  >
+                    <label class="form-label">
+                      <span class="form-step-badge">Step 5</span>
+                      Customer Details
+                    </label>
+                    <div class="details-grid" id="detailsGrid">
+                      <div class="form-input-wrapper">
+                        <input
+                          type="text"
+                          id="bookingName"
+                          name="fullname"
+                          class="form-input"
+                          placeholder="Full Name"
+                          required
+                        />
+                        <i class="fas fa-user form-input-icon"></i>
+                      </div>
+                      <div class="form-input-wrapper">
+                        <input
+                          type="tel"
+                          id="bookingPhone"
+                          name="phone"
+                          class="form-input"
+                          placeholder="Phone Number"
+                          required
+                        />
+                        <i class="fas fa-phone form-input-icon"></i>
+                      </div>
+                      <div class="form-input-wrapper">
+                        <input
+                          type="email"
+                          id="bookingEmail"
+                          name="email"
+                          class="form-input"
+                          placeholder="Email Address"
+                          required
+                        />
+                        <i class="fas fa-envelope form-input-icon"></i>
+                      </div>
+                    </div>
+                    <span class="form-error" id="detailsError"
+                      >Please fill in all required fields</span
+                    >
+                  </div>
+
+                  <!-- Step 6: Notes -->
+                  <div
+                    class="form-group form-group--wide"
+                    id="formGroupNotes"
+                    data-reveal="up"
+                    data-reveal-delay="600"
+                  >
+                    <label for="bookingNotes" class="form-label">
+                      <span class="form-step-badge form-step-badge--optional"
+                        >Optional</span
+                      >
+                      Notes
+                    </label>
+                    <textarea
+                      id="bookingNotes"
+                      name="notes"
+                      class="form-textarea"
+                      rows="3"
+                      placeholder="Special requests, allergies, or anything we should know..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div
+                  class="booking-submit"
+                  id="bookingSubmit"
+                  data-reveal="up"
+                  data-reveal-delay="700"
+                >
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn--large"
+                    id="bookingSubmitBtn"
+                  >
+                    <i class="fas fa-calendar-check"></i>
+                    Book Appointment
+                  </button>
+                  <p class="booking-submit-note">
+                    <i class="fas fa-lock"></i>
+                    Your information is secure and never shared
+                  </p>
+                </div>
+              </form>
+
+              <!-- Success Message (hidden by default) -->
+              <div
+                class="booking-success"
+                id="bookingSuccess"
+                style="display: none"
+              >
+                <div class="booking-success-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="booking-success-title">Booking Request Sent!</h3>
+                <p class="booking-success-text">
+                  We've opened WhatsApp with your booking details. Send the
+                  message to confirm your appointment.
+                </p>
+                <a href="#" class="btn btn-primary" id="bookingSuccessBtn"
+                  >Open WhatsApp Again</a
+                >
+              </div>
+            </div>
+
+            <!-- Right: Appointment Summary -->
+            <div class="booking-summary-wrapper">
+              <div class="form-group form-group--wide" id="formGroupSummary">
+                <label class="form-label">
+                  <span class="form-step-badge">Summary</span>
+                  Appointment Summary
+                </label>
+                <div class="booking-summary-card" id="bookingSummaryCard">
+                  <div class="summary-header">
+                    <i class="fas fa-receipt"></i>
+                    <span>Booking Preview</span>
+                  </div>
+                  <div class="summary-body">
+                    <div class="summary-item" id="summaryItemService">
+                      <span class="summary-item-label">Service</span>
+                      <span class="summary-item-value" id="summaryValueService"
+                        >Select a service</span
+                      >
+                    </div>
+                    <div class="summary-item" id="summaryItemStylist">
+                      <span class="summary-item-label">Stylist</span>
+                      <span class="summary-item-value" id="summaryValueStylist"
+                        >Select a stylist</span
+                      >
+                    </div>
+                    <div class="summary-item" id="summaryItemDate">
+                      <span class="summary-item-label">Date</span>
+                      <span class="summary-item-value" id="summaryValueDate"
+                        >Pick a date</span
+                      >
+                    </div>
+                    <div class="summary-item" id="summaryItemTime">
+                      <span class="summary-item-label">Time</span>
+                      <span class="summary-item-value" id="summaryValueTime"
+                        >Choose a time</span
+                      >
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div
+                      class="summary-item summary-item--total"
+                      id="summaryItemPrice"
+                    >
+                      <span class="summary-item-label">Total</span>
+                      <span
+                        class="summary-item-value summary-item-value--price"
+                        id="summaryValuePrice"
+                        >—</span
+                      >
+                    </div>
+                  </div>
+                  <div class="summary-footer">
+                    <i class="fas fa-info-circle"></i>
+                    <span
+                      >Prices may vary based on hair length and
+                      complexity.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /booking-layout -->
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 4 — WHY BOOK ONLINE
+        ============================================ -->
+      <section class="why-book-section" id="whyBook">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Benefits</span>
+            <h2 class="section-title">Why Book Online</h2>
+            <p class="section-subtitle">
+              Experience the convenience of modern salon scheduling.
+            </p>
+          </div>
+
+          <div class="why-book-grid">
+            <!-- Card 1 -->
+            <div class="why-book-card" data-reveal="up" data-reveal-delay="100">
+              <div class="why-book-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3 class="why-book-title">Instant Scheduling</h3>
+              <p class="why-book-text">Reserve your slot immediately.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="why-book-card" data-reveal="up" data-reveal-delay="200">
+              <div class="why-book-icon">
+                <i class="fas fa-user-check"></i>
+              </div>
+              <h3 class="why-book-title">Preferred Stylist</h3>
+              <p class="why-book-text">Choose who you want.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="why-book-card" data-reveal="up" data-reveal-delay="300">
+              <div class="why-book-icon">
+                <i class="fas fa-calendar-days"></i>
+              </div>
+              <h3 class="why-book-title">Flexible Appointments</h3>
+              <p class="why-book-text">Book when convenient.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 5 — BOOKING POLICIES
+        ============================================ -->
+      <section class="booking-policies-section" id="bookingPolicies">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Policies</span>
+            <h2 class="section-title">Booking Policies</h2>
+            <p class="section-subtitle">
+              A few things to keep in mind before your visit.
+            </p>
+          </div>
+
+          <div class="policies-list">
+            <!-- Policy 1 -->
+            <div class="policy-item" data-reveal="up" data-reveal-delay="100">
+              <div class="policy-icon">
+                <i class="fas fa-ban"></i>
+              </div>
+              <div class="policy-content">
+                <h3 class="policy-title">Cancellation Policy</h3>
+                <p class="policy-text">
+                  Please cancel or reschedule at least 24 hours in advance. Late
+                  cancellations may incur a fee.
+                </p>
+              </div>
+            </div>
+
+            <!-- Policy 2 -->
+            <div class="policy-item" data-reveal="up" data-reveal-delay="200">
+              <div class="policy-icon">
+                <i class="fas fa-rotate"></i>
+              </div>
+              <div class="policy-content">
+                <h3 class="policy-title">Rescheduling Policy</h3>
+                <p class="policy-text">
+                  Reschedule anytime through the website or WhatsApp. Same-day
+                  changes are subject to availability.
+                </p>
+              </div>
+            </div>
+
+            <!-- Policy 3 -->
+            <div class="policy-item" data-reveal="up" data-reveal-delay="300">
+              <div class="policy-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="policy-content">
+                <h3 class="policy-title">Arrival Time</h3>
+                <p class="policy-text">
+                  Arrive 10 minutes early to check in. Late arrivals may result
+                  in a shortened service.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 6 — FAQ
+        ============================================ -->
+      <section class="faq-section" id="faq">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">
+              Quick answers to common questions about booking.
+            </p>
+          </div>
+
+          <div class="faq-list" data-reveal="up" data-reveal-delay="100">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">Can I reschedule?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. You can reschedule anytime through our website or
+                    WhatsApp. We recommend doing so at least 24 hours in advance
+                    to secure your preferred slot. Same-day rescheduling is
+                    subject to availability.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">Can I cancel?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Absolutely. Cancellations are free when made at least 24
+                    hours before your appointment. Late cancellations or
+                    no-shows may incur a small fee to cover reserved time.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">Do you accept walk-ins?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    We prioritize booked appointments, but walk-ins are welcome
+                    based on availability. To guarantee your spot and preferred
+                    stylist, we recommend booking ahead.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">Can I choose my stylist?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. During booking, you can select your preferred stylist
+                    from our team. If they are unavailable, you can choose
+                    another or opt for "Any Available" and we'll match you with
+                    the best fit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">What happens if I'm late?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    We hold appointments for 10 minutes. After that, we may need
+                    to shorten your service or reschedule to avoid delaying
+                    other clients. Arriving early ensures you get the full
+                    experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 7 — FINAL CTA
+        ============================================ -->
+      <section class="final-cta-section" id="finalCta">
+        <div class="container">
+          <div class="final-cta-card" data-reveal="up">
+            <h2 class="final-cta-headline">Need Help Booking?</h2>
+            <p class="final-cta-subtext">
+              Our team is ready to assist you with your appointment.
+            </p>
+            <div class="final-cta-actions">
+              <a
+                href="https://wa.me/254712345678"
+                target="_blank"
+                class="btn btn-whatsapp"
+              >
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp Us
+              </a>
+              <a href="tel:+254712345678" class="btn btn-call">
+                <i class="fas fa-phone"></i>
+                Call Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand" data-reveal="up">
+            <a href="#" class="footer-logo">SalonBook</a>
+            <p class="footer-tagline">
+              A modern salon experience built around convenience, quality, and
+              customer loyalty.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links" data-reveal="up" data-reveal-delay="100">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact" data-reveal="up" data-reveal-delay="200">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <span>123 Kimathi Street, Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254712345678">+254 712 345 678</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@salonbook.co.ke">hello@salonbook.co.ke</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2026 SalonBook. All rights reserved.</p>
+          <div class="footer-payment">
+            <span>We accept:</span>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-stripe"></i>
+              <i class="fab fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

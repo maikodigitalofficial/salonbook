@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership - SalonBook</title>
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/membership.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="loaded">
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="/" class="logo">SalonBook</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stylists.html">Stylists</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li>
+            <a href="contact.html" class="nav-cta"
+              >Contact <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============================================
+        SECTION 1 — MEMBERSHIP HERO
+        ============================================ -->
+      <section class="membership-hero" id="membershipHero">
+        <div class="membership-hero-container">
+          <div class="membership-hero-content" data-reveal="up">
+            <h1 class="membership-hero-title">
+              <span class="headline-line">Join The</span>
+              <span class="headline-line">Beauty Club</span>
+            </h1>
+            <p class="membership-hero-subtitle">
+              Enjoy exclusive benefits, priority booking, and member-only
+              rewards designed to help you look your best all year round.
+            </p>
+            <div class="membership-hero-actions">
+              <a href="#membershipPlans" class="btn btn-primary btn--large"
+                >Become A Member</a
+              >
+              <a href="#benefits" class="btn btn-secondary btn--large"
+                >View Benefits</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 2 — MEMBERSHIP BENEFITS
+        ============================================ -->
+      <section class="membership-benefits-section" id="benefits">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Perks</span>
+            <h2 class="section-title">Membership Benefits</h2>
+            <p class="section-subtitle">Premium perks designed around you.</p>
+          </div>
+
+          <div class="benefits-grid">
+            <!-- Card 1 -->
+            <div class="benefit-card" data-reveal="up" data-reveal-delay="100">
+              <div class="benefit-icon">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h3 class="benefit-title">Priority Booking</h3>
+              <p class="benefit-text">
+                Reserve appointments before non-members.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="benefit-card" data-reveal="up" data-reveal-delay="200">
+              <div class="benefit-icon">
+                <i class="fas fa-tag"></i>
+              </div>
+              <h3 class="benefit-title">Member Discounts</h3>
+              <p class="benefit-text">Save on selected services.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="benefit-card" data-reveal="up" data-reveal-delay="300">
+              <div class="benefit-icon">
+                <i class="fas fa-cake-candles"></i>
+              </div>
+              <h3 class="benefit-title">Birthday Rewards</h3>
+              <p class="benefit-text">Special treats on your birthday month.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="benefit-card" data-reveal="up" data-reveal-delay="400">
+              <div class="benefit-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 class="benefit-title">Exclusive Offers</h3>
+              <p class="benefit-text">Access members-only promotions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 3 — MEMBERSHIP PLANS
+        ============================================ -->
+      <section class="membership-plans" id="membershipPlans">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Pricing</span>
+            <h2 class="section-title">Membership Plans</h2>
+            <p class="section-subtitle">
+              Choose the plan that fits your lifestyle.
+            </p>
+          </div>
+
+          <div class="plans-grid">
+            <!-- Monthly Plan -->
+            <div class="plan-card" data-reveal="up" data-reveal-delay="100">
+              <div class="plan-header">
+                <h3 class="plan-name">Beauty Club Monthly</h3>
+                <div class="plan-price">
+                  KES 2,000
+                  <span>/ Month</span>
+                </div>
+              </div>
+              <ul class="plan-features">
+                <li>
+                  <i class="fas fa-check"></i>
+                  Priority Booking
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  10% Discount
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Birthday Reward
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Member Promotions
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="plan-btn plan-btn-outline"
+                data-plan="monthly"
+                data-price="KES 2,000"
+              >
+                Join Now
+              </button>
+            </div>
+
+            <!-- Annual Plan -->
+            <div
+              class="plan-card plan-card--featured"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="plan-badge">Best Value</div>
+              <div class="plan-header">
+                <h3 class="plan-name">Beauty Club Annual</h3>
+                <div class="plan-price">
+                  KES 20,000
+                  <span>/ Year</span>
+                </div>
+              </div>
+              <ul class="plan-features">
+                <li>
+                  <i class="fas fa-check"></i>
+                  Everything In Monthly
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  2 Months Free
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  VIP Priority Access
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Exclusive Events
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="plan-btn"
+                data-plan="annual"
+                data-price="KES 20,000"
+              >
+                Join Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 4 — SAVINGS CALCULATOR
+        ============================================ -->
+      <section class="savings-calculator" id="savingsCalculator">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Savings</span>
+            <h2 class="section-title">See What You Save</h2>
+            <p class="section-subtitle">
+              Membership pays for itself. Here is a typical example.
+            </p>
+          </div>
+
+          <div class="calculator-card" data-reveal="up" data-reveal-delay="100">
+            <div class="calculator-header">
+              <i class="fas fa-calculator"></i>
+              <span>Estimated Savings</span>
+            </div>
+
+            <div class="calculator-body">
+              <div class="calculator-row">
+                <div class="calculator-label">
+                  <i class="fas fa-calendar"></i>
+                  Average Monthly Visits
+                </div>
+                <div class="calculator-value">2</div>
+              </div>
+
+              <div class="calculator-row">
+                <div class="calculator-label">
+                  <i class="fas fa-money-bill"></i>
+                  Average Spend Per Visit
+                </div>
+                <div class="calculator-value">KES 4,000</div>
+              </div>
+
+              <div class="calculator-divider"></div>
+
+              <div class="calculator-row calculator-row--highlight">
+                <div class="calculator-label">
+                  <i class="fas fa-piggy-bank"></i>
+                  Estimated Annual Savings
+                </div>
+                <div class="calculator-value calculator-value--savings">
+                  KES 9,600
+                </div>
+              </div>
+            </div>
+
+            <div class="calculator-footer">
+              <i class="fas fa-info-circle"></i>
+              <span
+                >Based on 10% member discount + priority booking value.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 5 — EXCLUSIVE PERKS
+        ============================================ -->
+      <section class="exclusive-perks" id="exclusivePerks">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Perks</span>
+            <h2 class="section-title">Exclusive Perks</h2>
+            <p class="section-subtitle">
+              Privileges reserved for members only.
+            </p>
+          </div>
+
+          <div class="perks-grid">
+            <!-- Card 1 -->
+            <div class="perk-card" data-reveal="up" data-reveal-delay="100">
+              <div class="perk-icon">
+                <i class="fas fa-crown"></i>
+              </div>
+              <h3 class="perk-title">VIP Booking Window</h3>
+              <p class="perk-text">Book before everyone else.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="perk-card" data-reveal="up" data-reveal-delay="200">
+              <div class="perk-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3 class="perk-title">Member Appreciation Days</h3>
+              <p class="perk-text">Special discounts.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="perk-card" data-reveal="up" data-reveal-delay="300">
+              <div class="perk-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3 class="perk-title">Complimentary Consultations</h3>
+              <p class="perk-text">Personalized beauty recommendations.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="perk-card" data-reveal="up" data-reveal-delay="400">
+              <div class="perk-icon">
+                <i class="fas fa-gift"></i>
+              </div>
+              <h3 class="perk-title">Seasonal Offers</h3>
+              <p class="perk-text">Exclusive packages.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 6 — TESTIMONIALS
+        ============================================ -->
+      <section class="membership-testimonials" id="testimonials">
+        <div class="testimonials-canvas-container">
+          <canvas id="testimonialsCanvas"></canvas>
+        </div>
+        <div class="container testimonials-content">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">Testimonials</span>
+            <h2 class="section-title">What Members Say</h2>
+            <p class="section-subtitle">Real stories from real members.</p>
+          </div>
+
+          <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <article
+              class="testimonial-card"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <img
+                    src="https://i.pinimg.com/736x/23/93/b3/2393b3e6f9db7113a7a8367db4a2bbbf.jpg"
+                    alt="Sarah M."
+                  />
+                </div>
+                <div class="testimonial-meta">
+                  <div class="testimonial-name-row">
+                    <span class="testimonial-name">Sarah M.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="testimonial-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial-rating-row">
+                    <div class="stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="testimonial-date">2 weeks ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <p>
+                  "Membership has saved me money and made booking so much
+                  easier. The priority booking is a game changer!"
+                </p>
+              </div>
+              <div class="testimonial-service">
+                <span>Member since:</span> 2024
+              </div>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article
+              class="testimonial-card"
+              data-reveal="up"
+              data-reveal-delay="200"
+            >
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <img
+                    src="https://i.pinimg.com/1200x/f7/9d/6e/f79d6e7b27ad1311430e63c1faded840.jpg"
+                    alt="Brian K."
+                  />
+                </div>
+                <div class="testimonial-meta">
+                  <div class="testimonial-name-row">
+                    <span class="testimonial-name">Brian K.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="testimonial-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial-rating-row">
+                    <div class="stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="testimonial-date">1 month ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <p>
+                  "The priority booking alone makes it worth it. I never have to
+                  worry about getting my preferred time slot anymore."
+                </p>
+              </div>
+              <div class="testimonial-service">
+                <span>Member since:</span> 2023
+              </div>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article
+              class="testimonial-card"
+              data-reveal="up"
+              data-reveal-delay="300"
+            >
+              <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                  <img
+                    src="https://i.pinimg.com/736x/ea/c5/1a/eac51ad614181bce9cd0bf2744927ba5.jpg"
+                    alt="Angela W."
+                  />
+                </div>
+                <div class="testimonial-meta">
+                  <div class="testimonial-name-row">
+                    <span class="testimonial-name">Angela W.</span>
+                    <span class="verified-badge">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          fill="#4285F4"
+                        />
+                      </svg>
+                    </span>
+                    <div class="testimonial-google">
+                      <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                          fill="#FBBC05"
+                        />
+                        <path
+                          d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                          fill="#EA4335"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial-rating-row">
+                    <div class="stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <span class="testimonial-date">3 weeks ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <p>
+                  "I love the exclusive offers and birthday rewards. The annual
+                  plan paid for itself within the first few months."
+                </p>
+              </div>
+              <div class="testimonial-service">
+                <span>Member since:</span> 2022
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 7 — MEMBERSHIP FAQ
+        ============================================ -->
+      <section class="faq-section" id="faq">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Membership Questions</h2>
+            <p class="section-subtitle">
+              Quick answers about your Beauty Club membership.
+            </p>
+          </div>
+
+          <div class="faq-list" data-reveal="up" data-reveal-delay="100">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">Can I cancel anytime?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. You can cancel your monthly membership at any time with
+                    no penalties. Your benefits will remain active until the end
+                    of your current billing period. Annual memberships can also
+                    be cancelled, but refunds are prorated based on time used.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">When am I billed?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Monthly memberships are billed on the same date each month
+                    (the day you signed up). Annual memberships are billed once
+                    per year on your signup anniversary. You'll receive a
+                    reminder email 3 days before each billing date.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text"
+                  >Do benefits start immediately?</span
+                >
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. All membership benefits activate immediately upon
+                    payment confirmation. You can start booking with priority
+                    access and enjoying member discounts right away. Birthday
+                    rewards are available during your birthday month.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text">Can I upgrade?</span>
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Absolutely. You can upgrade from monthly to annual at any
+                    time. We'll prorate your remaining monthly balance toward
+                    the annual plan. Upgrading gives you immediate access to VIP
+                    priority and exclusive events.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text"
+                  >Do discounts apply to all services?</span
+                >
+                <span class="faq-icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Member discounts apply to all regular services including
+                    haircuts, coloring, treatments, nails, and barber services.
+                    Discounts do not apply to already-discounted packages,
+                    promotional offers, or retail product purchases.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+        SECTION 8 — FINAL CTA
+        ============================================ -->
+      <section class="membership-final-cta-section" id="membershipFinalCta">
+        <div class="container">
+          <div class="membership-final-cta-card" data-reveal="up">
+            <h2 class="membership-final-cta-headline">Become A Member Today</h2>
+            <p class="membership-final-cta-subtext">
+              Unlock exclusive benefits and enjoy a more rewarding salon
+              experience.
+            </p>
+            <div class="membership-final-cta-actions">
+              <a href="#membershipPlans" class="btn btn-primary btn--large">
+                Join Membership
+              </a>
+              <a href="booking.html" class="btn btn-secondary btn--large">
+                Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand" data-reveal="up">
+            <a href="#" class="footer-logo">SalonBook</a>
+            <p class="footer-tagline">
+              A modern salon experience built around convenience, quality, and
+              customer loyalty.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links" data-reveal="up" data-reveal-delay="100">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact" data-reveal="up" data-reveal-delay="200">
+            <h4>Get in Touch</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <span>123 Kimathi Street, Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254712345678">+254 712 345 678</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@salonbook.co.ke">hello@salonbook.co.ke</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2026 SalonBook. All rights reserved.</p>
+          <div class="footer-payment">
+            <span>We accept:</span>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-stripe"></i>
+              <i class="fab fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="three/hero-scene.js"></script>
+    <script src="three/background-effects.js"></script>
+    <script src="three/testimonials-particles.js"></script>
+
+    <script src="js/slider.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/memebership.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

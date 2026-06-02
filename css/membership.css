@@ -1,0 +1,1976 @@
+/* ============================================
+MEMBERSHIP.CSS — Complete Styles
+============================================ */
+
+/* ============================================
+SECTION 1 — MEMBERSHIP HERO
+============================================ */
+
+.membership-hero {
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--header-height) + var(--space-2xl)) var(--space-lg)
+    var(--space-xl);
+  text-align: center;
+  overflow: hidden;
+}
+
+.membership-hero-container {
+  position: relative;
+  z-index: 1;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.membership-hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.membership-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.membership-hero-title .headline-line {
+  display: block;
+}
+
+.membership-hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.membership-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* Hero Buttons */
+.membership-hero-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.9rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.membership-hero-actions .btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.membership-hero-actions .btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.membership-hero-actions .btn-secondary {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.membership-hero-actions .btn-secondary:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+SECTION 2 — MEMBERSHIP PLANS / PRICING
+============================================ */
+
+.membership-plans {
+  padding: var(--space-3xl) 0;
+  position: relative;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.plan-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.plan-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card.featured {
+  border-color: var(--color-accent);
+  border-width: 2px;
+  transform: scale(1.03);
+}
+
+.plan-card.featured:hover {
+  transform: scale(1.03) translateY(-8px);
+}
+
+.plan-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 100px;
+  margin-bottom: var(--space-md);
+}
+
+.plan-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.plan-price {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+  line-height: 1;
+}
+
+.plan-price span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.plan-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+  line-height: 1.5;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-lg);
+  text-align: left;
+}
+
+.plan-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.plan-features li:last-child {
+  border-bottom: none;
+}
+
+.plan-features li i {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.plan-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid var(--color-accent);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.plan-btn:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.plan-btn-outline {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.plan-btn-outline:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ============================================
+SECTION 3 — BENEFITS
+============================================ */
+
+.membership-benefits-section {
+  padding: var(--space-3xl) 0;
+  position: relative;
+  background-color: var(--color-bg-elevated);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.benefit-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background-color: var(--color-accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-md);
+  transition: all 0.25s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  background-color: var(--color-accent);
+  transform: scale(1.08);
+}
+
+.benefit-icon i {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  transition: color 0.25s ease;
+}
+
+.benefit-card:hover .benefit-icon i {
+  color: var(--color-bg);
+}
+
+.benefit-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.benefit-text {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ============================================
+SECTION 4 — HOW IT WORKS
+============================================ */
+
+.how-it-works {
+  padding: var(--space-3xl) 0;
+  position: relative;
+}
+
+.steps-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--space-xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-md);
+  transition: all 0.25s ease;
+}
+
+.step-item:hover .step-number {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  transform: scale(1.1);
+}
+
+.step-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+}
+
+.step-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.step-connector {
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-border);
+  margin-top: 24px;
+  flex-shrink: 0;
+  transition: background-color 0.25s ease;
+}
+
+.step-item:hover + .step-connector,
+.step-connector:hover {
+  background-color: var(--color-accent);
+}
+
+/* ============================================
+SECTION 5 — TESTIMONIALS
+============================================ */
+
+.membership-testimonials {
+  padding: var(--space-3xl) 0;
+  background-color: var(--color-bg-elevated);
+}
+
+.testimonial-card-member {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: var(--space-lg);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.testimonial-card-member:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.member-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: var(--space-sm);
+  border: 2px solid var(--color-border);
+  transition: border-color 0.25s ease;
+}
+
+.testimonial-card-member:hover .member-avatar {
+  border-color: var(--color-accent);
+}
+
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-quote {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+  font-style: italic;
+}
+
+.member-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.member-tier {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* ============================================
+SECTION 6 — FINAL CTA
+============================================ */
+
+.membership-final-cta {
+  padding: var(--space-3xl) 0;
+  position: relative;
+}
+
+.membership-cta-card {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: var(--space-2xl) var(--space-xl);
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.membership-cta-card:hover {
+  border-color: var(--color-accent-muted);
+}
+
+.membership-cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.membership-cta-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+}
+
+.membership-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.membership-cta-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.9rem 2.2rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.membership-cta-actions .btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.membership-cta-actions .btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.membership-cta-actions .btn-secondary {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.membership-cta-actions .btn-secondary:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+SECTION 2 — MEMBERSHIP BENEFITS
+============================================ */
+
+.membership-benefits-section {
+  padding: var(--space-3xl) 0;
+  position: relative;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.benefit-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background-color: var(--color-accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-md);
+  transition: all 0.25s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  background-color: var(--color-accent);
+  transform: scale(1.08);
+}
+
+.benefit-icon i {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  transition: color 0.25s ease;
+}
+
+.benefit-card:hover .benefit-icon i {
+  color: var(--color-bg);
+}
+
+.benefit-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+  line-height: 1.3;
+}
+
+.benefit-text {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ============================================
+RESPONSIVE — MEMBERSHIP BENEFITS
+============================================ */
+@media (max-width: 992px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .membership-benefits-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: var(--space-md);
+  }
+
+  .benefit-card {
+    padding: var(--space-lg);
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .benefit-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .benefit-icon i {
+    font-size: 1.2rem;
+  }
+
+  .benefit-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .benefit-title {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+  }
+
+  .benefit-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefit-card {
+    padding: var(--space-md);
+    gap: var(--space-sm);
+  }
+
+  .benefit-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+
+  .benefit-icon i {
+    font-size: 1.1rem;
+  }
+
+  .benefit-title {
+    font-size: 1rem;
+  }
+
+  .benefit-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* ============================================
+REDUCED MOTION — MEMBERSHIP BENEFITS
+============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .benefit-card {
+    transition: none !important;
+  }
+
+  .benefit-card:hover {
+    transform: none !important;
+  }
+
+  .benefit-icon {
+    transition: none !important;
+  }
+
+  .benefit-card:hover .benefit-icon {
+    transform: none !important;
+  }
+}
+
+/* ============================================
+SECTION 3 — MEMBERSHIP PLANS
+============================================ */
+
+.membership-plans {
+  padding: var(--space-3xl) 0;
+  position: relative;
+  background-color: var(--color-bg-elevated);
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.plan-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.plan-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card--featured {
+  border-color: var(--color-accent);
+  border-width: 2px;
+  transform: scale(1.02);
+}
+
+.plan-card--featured:hover {
+  transform: scale(1.02) translateY(-8px);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.12);
+}
+
+.plan-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 18px;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.plan-header {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.plan-name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+  line-height: 1.3;
+}
+
+.plan-price {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.plan-price span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-lg);
+  text-align: left;
+}
+
+.plan-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.plan-features li:last-child {
+  border-bottom: none;
+}
+
+.plan-features li i {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* Plan Buttons */
+.plan-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.plan-btn {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.plan-btn:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.plan-btn-outline {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.plan-btn-outline:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ============================================
+RESPONSIVE — MEMBERSHIP PLANS
+============================================ */
+@media (max-width: 768px) {
+  .membership-plans {
+    padding: var(--space-2xl) 0;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    gap: var(--space-xl);
+  }
+
+  .plan-card--featured {
+    transform: none;
+    order: -1;
+  }
+
+  .plan-card--featured:hover {
+    transform: translateY(-8px);
+  }
+
+  .plan-price {
+    font-size: 1.9rem;
+  }
+
+  .plan-features li {
+    padding: 8px 0;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .plan-card {
+    padding: var(--space-lg) var(--space-md);
+    border-radius: 16px;
+  }
+
+  .plan-badge {
+    padding: 5px 14px;
+    font-size: 0.65rem;
+  }
+
+  .plan-name {
+    font-size: 1.1rem;
+  }
+
+  .plan-price {
+    font-size: 1.7rem;
+  }
+
+  .plan-btn {
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+/* ============================================
+REDUCED MOTION — MEMBERSHIP PLANS
+============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .plan-card {
+    transition: none !important;
+  }
+
+  .plan-card:hover {
+    transform: none !important;
+  }
+
+  .plan-card--featured {
+    transform: none !important;
+  }
+
+  .plan-card--featured:hover {
+    transform: none !important;
+  }
+
+  .plan-btn,
+  .plan-btn-outline {
+    transition: none !important;
+  }
+
+  .plan-btn:hover,
+  .plan-btn-outline:hover {
+    transform: none !important;
+  }
+}
+
+/* ============================================
+SECTION 4 — SAVINGS CALCULATOR
+============================================ */
+
+.savings-calculator {
+  padding: var(--space-3xl) 0;
+  position: relative;
+}
+
+.calculator-card {
+  max-width: 560px;
+  margin: 0 auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.calculator-card:hover {
+  border-color: var(--color-accent-muted);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.calculator-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-accent-soft);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.calculator-header i {
+  font-size: 1rem;
+  color: var(--color-accent);
+}
+
+.calculator-header span {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.calculator-body {
+  padding: var(--space-lg) var(--space-xl);
+}
+
+.calculator-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+}
+
+.calculator-row:first-child {
+  padding-top: 0;
+}
+
+.calculator-row:last-of-type {
+  padding-bottom: 0;
+}
+
+.calculator-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.calculator-label i {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  width: 18px;
+  text-align: center;
+}
+
+.calculator-value {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.calculator-divider {
+  height: 1px;
+  background-color: var(--color-border);
+  margin: var(--space-sm) 0;
+}
+
+.calculator-row--highlight {
+  padding: var(--space-md) 0;
+  margin-top: var(--space-xs);
+}
+
+.calculator-row--highlight .calculator-label {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.calculator-row--highlight .calculator-label i {
+  color: var(--color-accent);
+}
+
+.calculator-value--savings {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.calculator-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.calculator-footer i {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.calculator-footer span {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* ============================================
+RESPONSIVE — SAVINGS CALCULATOR
+============================================ */
+@media (max-width: 480px) {
+  .savings-calculator {
+    padding: var(--space-2xl) 0;
+  }
+
+  .calculator-card {
+    border-radius: 16px;
+    margin: 0 var(--space-sm);
+  }
+
+  .calculator-body {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .calculator-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: var(--space-sm) 0;
+  }
+
+  .calculator-value {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .calculator-value--savings {
+    font-size: 1.4rem;
+  }
+
+  .calculator-label {
+    font-size: 0.85rem;
+  }
+
+  .calculator-footer {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .calculator-footer span {
+    font-size: 0.7rem;
+  }
+}
+
+/* ============================================
+REDUCED MOTION — SAVINGS CALCULATOR
+============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .calculator-card {
+    transition: none !important;
+  }
+
+  .calculator-card:hover {
+    box-shadow: none !important;
+  }
+}
+
+/* ============================================
+SECTION 5 — EXCLUSIVE PERKS
+============================================ */
+
+.exclusive-perks {
+  padding: var(--space-3xl) 0;
+  position: relative;
+  background-color: var(--color-bg-elevated);
+}
+
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.perk-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: var(--space-2xl) var(--space-xl);
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.perk-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1);
+}
+
+.perk-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background-color: var(--color-accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-lg);
+  transition: all 0.25s ease;
+}
+
+.perk-card:hover .perk-icon {
+  background-color: var(--color-accent);
+  transform: scale(1.1) rotate(-4deg);
+}
+
+.perk-icon i {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  transition: color 0.25s ease;
+}
+
+.perk-card:hover .perk-icon i {
+  color: var(--color-bg);
+}
+
+.perk-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+  line-height: 1.3;
+}
+
+.perk-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================
+RESPONSIVE — EXCLUSIVE PERKS
+============================================ */
+@media (max-width: 768px) {
+  .exclusive-perks {
+    padding: var(--space-2xl) 0;
+  }
+
+  .perks-grid {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+    gap: var(--space-md);
+  }
+
+  .perk-card {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .perk-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .perk-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    margin-bottom: var(--space-md);
+  }
+
+  .perk-icon i {
+    font-size: 1.5rem;
+  }
+
+  .perk-title {
+    font-size: 1.15rem;
+  }
+
+  .perk-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .perk-card {
+    padding: var(--space-lg) var(--space-md);
+    border-radius: 16px;
+  }
+
+  .perk-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+  }
+
+  .perk-icon i {
+    font-size: 1.3rem;
+  }
+
+  .perk-title {
+    font-size: 1.05rem;
+  }
+
+  .perk-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================================
+REDUCED MOTION — EXCLUSIVE PERKS
+============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .perk-card {
+    transition: none !important;
+  }
+
+  .perk-card:hover {
+    transform: none !important;
+  }
+
+  .perk-icon {
+    transition: none !important;
+  }
+
+  .perk-card:hover .perk-icon {
+    transform: none !important;
+  }
+}
+
+/* ============================================
+   SECTION 6 — TESTIMONIALS WITH THREE.JS
+   ============================================ */
+
+.membership-testimonials {
+  position: relative;
+  padding: var(--space-3xl) 0;
+  overflow: hidden;
+  background-color: var(--color-bg-elevated);
+}
+
+.membership-testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-border),
+    transparent
+  );
+}
+
+.testimonials-canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#testimonialsCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.testimonials-content {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+  justify-content: center;
+}
+
+/* Testimonial Card — EXACT match to index.html */
+.testimonial-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: var(--space-xl);
+  transition: all var(--transition-base);
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(45, 212, 168, 0.2);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.testimonial-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid var(--color-border);
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Name row: name + badge + google inline */
+.testimonial-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.testimonial-name {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+  cursor: default;
+}
+
+.testimonial-card:hover .testimonial-name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.verified-badge {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.verified-badge svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.testimonial-google {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+  margin-left: 12px;
+}
+
+.testimonial-card:hover .testimonial-google {
+  opacity: 1;
+}
+
+.testimonial-google svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Rating row */
+.testimonial-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.stars span {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.testimonial-date {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* Body */
+.testimonial-body {
+  margin-bottom: var(--space-md);
+}
+
+.testimonial-body p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Service Tag */
+.testimonial-service {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.testimonial-service span {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* ============================================
+   RESPONSIVE — TESTIMONIALS
+   ============================================ */
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+
+  .testimonial-card {
+    padding: var(--space-lg);
+  }
+}
+
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .membership-testimonials {
+    padding: var(--space-2xl) 0;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonial-card {
+    padding: var(--space-lg);
+  }
+
+  .testimonial-header {
+    gap: var(--space-sm);
+  }
+
+  .testimonial-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-google {
+    display: none;
+  }
+
+  .testimonial-body p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION — TESTIMONIALS
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-card {
+    transition: none !important;
+  }
+
+  .testimonial-card:hover {
+    transform: none !important;
+  }
+}
+
+/* ============================================
+   SECTION 6 — FAQ
+   ============================================ */
+
+.faq-section {
+  padding: var(--space-2xl) 0 var(--space-3xl);
+  position: relative;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color var(--transition-base);
+}
+
+.faq-item:hover {
+  border-color: var(--color-accent-muted);
+}
+
+.faq-item.is-open {
+  border-color: var(--color-accent);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  transition: background-color var(--transition-base);
+}
+
+.faq-question:hover {
+  background-color: var(--color-bg-elevated);
+}
+
+.faq-question-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.faq-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: var(--color-bg-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-base);
+}
+
+.faq-item.is-open .faq-icon {
+  background-color: var(--color-accent);
+  transform: rotate(45deg);
+}
+
+.faq-icon i {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-base);
+}
+
+.faq-item.is-open .faq-icon i {
+  color: var(--color-bg);
+}
+
+/* Answer — animated height */
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.is-open .faq-answer {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer-inner {
+  overflow: hidden;
+}
+
+.faq-answer-inner p {
+  padding: 0 var(--space-lg) var(--space-md);
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* ============================================
+   RESPONSIVE — FAQ
+   ============================================ */
+@media (max-width: 480px) {
+  .faq-section {
+    padding: var(--space-xl) 0 var(--space-2xl);
+  }
+
+  .faq-question {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .faq-question-text {
+    font-size: 0.9rem;
+  }
+
+  .faq-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+  }
+
+  .faq-icon i {
+    font-size: 0.7rem;
+  }
+
+  .faq-answer-inner p {
+    padding: 0 var(--space-md) var(--space-md);
+    font-size: 0.82rem;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION — FAQ
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .faq-answer {
+    transition: none;
+  }
+
+  .faq-icon {
+    transition: none;
+  }
+}
+
+/* ============================================
+SECTION 8 — FINAL CTA
+============================================ */
+
+.membership-final-cta-section {
+  padding: var(--space-3xl) 0;
+  position: relative;
+}
+
+.membership-final-cta-card {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: var(--space-3xl) var(--space-2xl);
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.membership-final-cta-card:hover {
+  border-color: var(--color-accent-muted);
+}
+
+.membership-final-cta-headline {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+  line-height: 1.15;
+}
+
+.membership-final-cta-subtext {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.membership-final-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.membership-final-cta-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.95rem 2.4rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.membership-final-cta-actions .btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.membership-final-cta-actions .btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.membership-final-cta-actions .btn-secondary {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.membership-final-cta-actions .btn-secondary:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+RESPONSIVE — FINAL CTA
+============================================ */
+@media (max-width: 768px) {
+  .membership-final-cta-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .membership-final-cta-card {
+    padding: var(--space-2xl) var(--space-lg);
+    border-radius: 20px;
+    margin: 0 var(--space-md);
+  }
+
+  .membership-final-cta-headline {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .membership-final-cta-subtext {
+    font-size: 0.9rem;
+  }
+
+  .membership-final-cta-actions {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .membership-final-cta-actions .btn {
+    width: 100%;
+    padding: 0.9rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .membership-final-cta-card {
+    padding: var(--space-xl) var(--space-md);
+    border-radius: 16px;
+    margin: 0 var(--space-sm);
+  }
+
+  .membership-final-cta-headline {
+    font-size: 1.4rem;
+  }
+
+  .membership-final-cta-subtext {
+    font-size: 0.85rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .membership-final-cta-actions .btn {
+    font-size: 0.9rem;
+    padding: 0.85rem 1.5rem;
+  }
+}
+
+/* ============================================
+REDUCED MOTION — FINAL CTA
+============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .membership-final-cta-actions .btn {
+    transition: none !important;
+  }
+
+  .membership-final-cta-actions .btn:hover {
+    transform: none !important;
+  }
+}
